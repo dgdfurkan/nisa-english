@@ -1,0 +1,57 @@
+// Ünite 2 sınav soru bankası (okul yazılısı biçiminde, dört seçenekli)
+
+const ELIF_WEEK = {
+  head: ['', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+  rows: [
+    ['swimming', '✓', '✓', '✓', '✓', '✓', '✓', '✓'],
+    ['tennis', '✓', '', '', '✓', '', '', ''],
+    ['chess', '', '', '', '', '', '', ''],
+    ['yoga', '', '', '', '', '', '✓', ''],
+  ],
+  cap: "Elif's week",
+};
+
+const KAAN = "Hi, I'm Kaan. I'm crazy about sports. I go cycling every weekend. I play table tennis with my brother twice a week. I sometimes go fishing with my grandpa, but I never go skiing because it is very expensive.";
+
+export const U2_EXAM = [
+  { id: 'u2q01', topic: 'pdg', q: 'Which one is WRONG?', opts: ['play tennis', 'do judo', 'go swimming', 'play cycling'], a: 3, why: 'cycling -ing ile biten hareketli bir etkinliktir: go cycling.' },
+  { id: 'u2q02', topic: 'pdg', q: 'We ______ camping in the summer holiday.', opts: ['play', 'do', 'go', 'make'], a: 2, why: 'go camping: -ing ile biten, bir yere gidilerek yapılan etkinlik.' },
+  { id: 'u2q03', topic: 'pdg', q: 'My sister ______ gymnastics at the sports centre.', opts: ['plays', 'does', 'goes', 'makes'], a: 1, why: 'do gymnastics. "My sister" = she → does.' },
+  { id: 'u2q04', topic: 'pdg', q: 'Which sport goes in the "DO" group?', opts: ['basketball', 'karate', 'skiing', 'badminton'], a: 1, why: 'Dövüş sporları "do" alır: do karate.' },
+  { id: 'u2q05', topic: 'pdg', q: 'Which one ends in -ing, but we use "do" with it?', opts: ['swimming', 'boxing', 'cycling', 'fishing'], a: 1, why: 'boxing bir istisnadır: do boxing.' },
+  { id: 'u2q06', topic: 'freq', q: 'According to the chart, which is TRUE?', table: ELIF_WEEK, opts: ['Elif always goes swimming.', 'Elif never does yoga.', 'Elif sometimes plays chess.', 'Elif plays tennis every day.'], a: 0, why: 'Yüzme her gün işaretli: always. Satranç hiç işaretli değil: never.' },
+  { id: 'u2q07', topic: 'freq', q: 'Look at the chart. How often does Elif play tennis?', table: ELIF_WEEK, opts: ['Every day.', 'Twice a week.', 'Once a month.', 'Never.'], a: 1, why: 'Tenis pazartesi ve perşembe işaretli: haftada iki kez (twice a week).' },
+  { id: 'u2q08', topic: 'freq', q: 'Look at the chart. Which is FALSE?', table: ELIF_WEEK, opts: ['Elif does yoga once a week.', 'Elif never plays chess.', 'Elif goes swimming every day.', 'Elif plays tennis three times a week.'], a: 3, why: 'Tenis yalnızca iki gün işaretli, üç değil.' },
+  { id: 'u2q09', topic: 'freq', q: "I ______ go skiing. I hate cold weather.", opts: ['always', 'usually', 'never', 'often'], a: 2, why: 'Soğuk havadan nefret ettiği için kayağa asla gitmez: never.' },
+  { id: 'u2q10', topic: 'freq', q: 'Which sentence is correct?', opts: ['She goes always swimming.', 'She always goes swimming.', 'Always she goes swimming.', 'She goes swimming always on.'], a: 1, why: 'Sıklık zarfı asıl fiilin önüne gelir.' },
+  { id: 'u2q11', topic: 'freq', q: 'Which sentence is correct?', opts: ['He is often late for training.', 'He often is late for training.', 'He late is often for training.', 'He is late for often training.'], a: 0, why: '"is" varsa sıklık zarfı ondan sonra gelir: He is often late.' },
+  { id: 'u2q12', topic: 'freq', q: 'A: ______ do you go to the gym?\nB: Three times a week.', opts: ['What', 'How often', 'Where', 'Which'], a: 1, why: 'Sıklık soran soru: How often?' },
+  { id: 'u2q13', topic: 'freq', q: 'A: How often does your brother play football?\nB: ______', opts: ['He plays at the stadium.', 'Twice a week.', 'Yes, he does.', 'With his friends.'], a: 1, why: '"How often" sorusunun cevabı bir sıklıktır: twice a week.' },
+  { id: 'u2q14', topic: 'freq', q: '"I go swimming every day." means "I ______ go swimming."', opts: ['always', 'never', 'rarely', 'sometimes'], a: 0, why: 'Her gün = her zaman: always.' },
+  { id: 'u2q15', topic: 'likes', q: 'Mark: I love playing volleyball, but I ______ boxing. I think it is too dangerous.', opts: ['enjoy', "can't stand", 'am crazy about', 'love'], a: 1, why: '"but" zıtlık getiriyor ve boksu tehlikeli buluyor: can\'t stand.' },
+  { id: 'u2q16', topic: 'likes', q: 'She enjoys ______ yoga in the morning.', opts: ['do', 'to do', 'doing', 'does'], a: 2, why: 'enjoy + -ing: enjoys doing.' },
+  { id: 'u2q17', topic: 'likes', q: 'I am good ______ playing chess.', opts: ['in', 'at', 'on', 'of'], a: 1, why: 'be good at.' },
+  { id: 'u2q18', topic: 'likes', q: 'Tom is interested ______ extreme sports.', opts: ['at', 'on', 'in', 'with'], a: 2, why: 'be interested in.' },
+  { id: 'u2q19', topic: 'likes', q: "A: Do you like ice skating?\nB: ______. It's my favourite sport!", opts: ["No, I don't", 'Yes, I do', 'Yes, I am', "No, I'm not"], a: 1, why: '"Do you like...?" sorusuna "Yes, I do." Favori sporu olduğu için cevap evet.' },
+  { id: 'u2q20', topic: 'kit', q: 'You need a ______ to play tennis.', opts: ['helmet', 'racket', 'goggles', 'skis'], a: 1, why: 'Tenis raketle oynanır: racket.' },
+  { id: 'u2q21', topic: 'kit', q: 'We play tennis on a ______.', opts: ['pitch', 'court', 'ring', 'pool'], a: 1, why: 'Tenis kortta oynanır: court.' },
+  { id: 'u2q22', topic: 'kit', q: 'Boxers fight in a ______.', opts: ['ring', 'court', 'track', 'slope'], a: 0, why: 'Boks ringde yapılır: ring.' },
+  { id: 'u2q23', topic: 'kit', q: 'The ______ stops the game and shows a red card.', opts: ['coach', 'fan', 'referee', 'captain'], a: 2, why: 'Oyunu durdurup kart gösteren kişi hakemdir: referee.' },
+  { id: 'u2q24', topic: 'sports', q: 'Which one is a water sport?', opts: ['archery', 'sailing', 'fencing', 'bowling'], a: 1, why: 'sailing (yelken) suda yapılır.' },
+  { id: 'u2q25', topic: 'sports', q: 'Which one is a team sport?', opts: ['volleyball', 'archery', 'skiing', 'yoga'], a: 0, why: 'Voleybol takımla oynanır.' },
+  { id: 'u2q26', topic: 'comp', q: 'Rafting is ______ than fishing. It is full of action!', opts: ['more boring', 'more exciting', 'excitinger', 'relaxing'], a: 1, why: 'Aksiyon dolu: more exciting.' },
+  { id: 'u2q27', topic: 'comp', q: 'Running is ______ than skiing. You only need a pair of trainers.', opts: ['more expensive', 'cheaper', 'more cheap', 'dangerous'], a: 1, why: 'Sadece spor ayakkabı gerekiyor, yani daha ucuz: cheap → cheaper.' },
+  { id: 'u2q28', topic: 'present', q: 'My father ______ jogging every morning.', opts: ['go', 'goes', 'going', 'is go'], a: 1, why: 'My father = he: go → goes.' },
+  { id: 'u2q29', topic: 'present', q: '______ your sister play basketball?\nYes, she does.', opts: ['Do', 'Does', 'Is', 'Are'], a: 1, why: 'She ile soru "Does" ile kurulur.' },
+  { id: 'u2q30', topic: 'present', q: 'Ali ______ like golf. He thinks it is boring.', opts: ["don't", "doesn't", "isn't", 'not'], a: 1, why: "Ali = he: doesn't + yalın fiil." },
+  { id: 'u2q31', topic: 'likes', q: "A: What's your favourite sport?\nB: ______\nA: Why?\nB: Because it's exciting and I love team sports.", opts: ['I play it twice a week.', "It's football.", 'At the stadium.', 'With my friends.'], a: 1, why: 'En sevdiği sporu soruyor: It\'s football.' },
+  { id: 'u2q32', topic: 'reading', q: `${KAAN}\nWhich is NOT true?`, opts: ['Kaan goes cycling at weekends.', 'He plays table tennis twice a week.', 'He often goes skiing.', 'He sometimes goes fishing.'], a: 2, why: 'Kaan kayağa asla gitmez (never), çünkü pahalı.' },
+  { id: 'u2q33', topic: 'reading', q: `${KAAN}\nWhy doesn't Kaan go skiing?`, opts: ['It is dangerous.', 'It is boring.', 'It is expensive.', 'It is tiring.'], a: 2, why: '"because it is very expensive" diyor.' },
+  { id: 'u2q34', topic: 'freq', q: 'Which one shows the correct order from 100% to 0%?', opts: ['always - usually - sometimes - never', 'never - sometimes - always - usually', 'usually - always - never - sometimes', 'sometimes - always - usually - never'], a: 0, why: 'always (%100) → usually → sometimes → never (%0).' },
+  { id: 'u2q35', topic: 'freq', q: 'They ______ do sports. They prefer watching TV.', opts: ['always', 'rarely', 'usually', 'often'], a: 1, why: 'Televizyon izlemeyi tercih ettikleri için nadiren spor yaparlar: rarely.' },
+  { id: 'u2q36', topic: 'kit', q: 'Our team always ______ the matches. We are the champions!', opts: ['wins', 'loses', 'beats', 'cheers'], a: 0, why: 'Maç kazanılır: win. "beat" bir rakibi yenmektir.' },
+  { id: 'u2q37', topic: 'kit', q: 'Which is the odd one out?', opts: ['racket', 'helmet', 'goggles', 'referee'], a: 3, why: 'referee (hakem) bir kişidir, diğerleri malzemedir.' },
+  { id: 'u2q38', topic: 'freq', q: "I don't ______ play golf.", opts: ['never', 'usually', 'always never', 'seldom never'], a: 1, why: '"never" yanına "don\'t" gelmez. "I don\'t usually play golf." doğrudur.' },
+  { id: 'u2q39', topic: 'pdg', q: 'Hakan ______ wrestling and his brother ______ bowling.', opts: ['does / goes', 'goes / plays', 'plays / does', 'does / plays'], a: 0, why: 'İki istisna birden: do wrestling, go bowling.' },
+  { id: 'u2q40', topic: 'present', q: 'A: What time does the match start?\nB: ______', opts: ['On Mondays.', 'At seven o\'clock.', 'In the stadium.', 'Twice a week.'], a: 1, why: '"What time" saati sorar: at seven o\'clock.' },
+];

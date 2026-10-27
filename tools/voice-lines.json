@@ -1,0 +1,2801 @@
+{
+ "voice": "Autonoe",
+ "persona": "A warm, friendly native English teacher recording pronunciation audio for a 12-year-old Turkish girl's English learning app",
+ "scene": "A quiet, cosy recording room. She reads words and sentences for her student, who listens and repeats after her. She genuinely likes her student and wants English to feel easy and fun.",
+ "style": "Warm, clear and natural, with a gentle smile you can hear. Native, relaxed intonation that moves naturally, never flat, never robotic, never sing-song, never exaggerated, never like an advert.",
+ "pace": "A little slower than normal conversation, every sound clearly articulated but still natural. Say one line, then stay completely silent for one full second before the next line.",
+ "accent": "Clear modern Standard British English.",
+ "context": "Pronunciation models for a student. Every word must be easy to hear and copy.",
+ "groups": [
+  {
+   "id": "w1",
+   "note": "These are single dictionary headwords. Read each one on its own, clearly, with a natural falling intonation, exactly as written. Never add any other words.",
+   "lines": [
+    [
+     "w-tall",
+     "tall"
+    ],
+    [
+     "w-short",
+     "short"
+    ],
+    [
+     "w-medium-height",
+     "medium height"
+    ],
+    [
+     "w-slim",
+     "slim"
+    ],
+    [
+     "w-thin",
+     "thin"
+    ],
+    [
+     "w-fat",
+     "fat"
+    ],
+    [
+     "w-overweight",
+     "overweight"
+    ],
+    [
+     "w-plump",
+     "plump"
+    ],
+    [
+     "w-well-built",
+     "well-built"
+    ],
+    [
+     "w-skinny",
+     "skinny"
+    ],
+    [
+     "w-strong",
+     "strong"
+    ],
+    [
+     "w-weak",
+     "weak"
+    ],
+    [
+     "w-height",
+     "height"
+    ],
+    [
+     "w-weight",
+     "weight"
+    ],
+    [
+     "w-young",
+     "young"
+    ],
+    [
+     "w-old",
+     "old"
+    ],
+    [
+     "w-middle-aged",
+     "middle-aged"
+    ],
+    [
+     "w-elderly",
+     "elderly"
+    ],
+    [
+     "w-teenager",
+     "teenager"
+    ],
+    [
+     "w-hair",
+     "hair"
+    ],
+    [
+     "w-long",
+     "long"
+    ],
+    [
+     "w-shoulder-length",
+     "shoulder-length"
+    ],
+    [
+     "w-straight",
+     "straight"
+    ],
+    [
+     "w-curly",
+     "curly"
+    ],
+    [
+     "w-wavy",
+     "wavy"
+    ],
+    [
+     "w-blonde",
+     "blonde"
+    ],
+    [
+     "w-fair",
+     "fair"
+    ],
+    [
+     "w-dark",
+     "dark"
+    ],
+    [
+     "w-brown",
+     "brown"
+    ],
+    [
+     "w-black",
+     "black"
+    ],
+    [
+     "w-red",
+     "red"
+    ],
+    [
+     "w-grey",
+     "grey"
+    ],
+    [
+     "w-bald",
+     "bald"
+    ],
+    [
+     "w-ponytail",
+     "ponytail"
+    ],
+    [
+     "w-braids",
+     "braids"
+    ],
+    [
+     "w-fringe",
+     "fringe"
+    ],
+    [
+     "w-eye",
+     "eye"
+    ],
+    [
+     "w-beard",
+     "beard"
+    ],
+    [
+     "w-moustache",
+     "moustache"
+    ],
+    [
+     "w-freckles",
+     "freckles"
+    ],
+    [
+     "w-glasses",
+     "glasses"
+    ],
+    [
+     "w-braces",
+     "braces"
+    ],
+    [
+     "w-dimples",
+     "dimples"
+    ],
+    [
+     "w-mole",
+     "mole"
+    ],
+    [
+     "w-scar",
+     "scar"
+    ],
+    [
+     "w-wrinkles",
+     "wrinkles"
+    ],
+    [
+     "w-round-face",
+     "round face"
+    ],
+    [
+     "w-earrings",
+     "earrings"
+    ],
+    [
+     "w-good-looking",
+     "good-looking"
+    ],
+    [
+     "w-handsome",
+     "handsome"
+    ],
+    [
+     "w-beautiful",
+     "beautiful"
+    ],
+    [
+     "w-pretty",
+     "pretty"
+    ],
+    [
+     "w-cute",
+     "cute"
+    ],
+    [
+     "w-ugly",
+     "ugly"
+    ],
+    [
+     "w-attractive",
+     "attractive"
+    ],
+    [
+     "w-friendly",
+     "friendly"
+    ],
+    [
+     "w-unfriendly",
+     "unfriendly"
+    ],
+    [
+     "w-kind",
+     "kind"
+    ],
+    [
+     "w-helpful",
+     "helpful"
+    ],
+    [
+     "w-generous",
+     "generous"
+    ],
+    [
+     "w-mean",
+     "mean"
+    ],
+    [
+     "w-selfish",
+     "selfish"
+    ],
+    [
+     "w-honest",
+     "honest"
+    ],
+    [
+     "w-dishonest",
+     "dishonest"
+    ],
+    [
+     "w-polite",
+     "polite"
+    ],
+    [
+     "w-rude",
+     "rude"
+    ],
+    [
+     "w-hard-working",
+     "hard-working"
+    ],
+    [
+     "w-lazy",
+     "lazy"
+    ],
+    [
+     "w-clever",
+     "clever"
+    ],
+    [
+     "w-smart",
+     "smart"
+    ],
+    [
+     "w-intelligent",
+     "intelligent"
+    ],
+    [
+     "w-funny",
+     "funny"
+    ]
+   ]
+  },
+  {
+   "id": "w2",
+   "note": "These are single dictionary headwords. Read each one on its own, clearly, with a natural falling intonation, exactly as written. Never add any other words.",
+   "lines": [
+    [
+     "w-serious",
+     "serious"
+    ],
+    [
+     "w-cheerful",
+     "cheerful"
+    ],
+    [
+     "w-outgoing",
+     "outgoing"
+    ],
+    [
+     "w-sociable",
+     "sociable"
+    ],
+    [
+     "w-shy",
+     "shy"
+    ],
+    [
+     "w-quiet",
+     "quiet"
+    ],
+    [
+     "w-talkative",
+     "talkative"
+    ],
+    [
+     "w-calm",
+     "calm"
+    ],
+    [
+     "w-nervous",
+     "nervous"
+    ],
+    [
+     "w-patient",
+     "patient"
+    ],
+    [
+     "w-impatient",
+     "impatient"
+    ],
+    [
+     "w-brave",
+     "brave"
+    ],
+    [
+     "w-careful",
+     "careful"
+    ],
+    [
+     "w-careless",
+     "careless"
+    ],
+    [
+     "w-confident",
+     "confident"
+    ],
+    [
+     "w-easygoing",
+     "easygoing"
+    ],
+    [
+     "w-stubborn",
+     "stubborn"
+    ],
+    [
+     "w-grumpy",
+     "grumpy"
+    ],
+    [
+     "w-moody",
+     "moody"
+    ],
+    [
+     "w-jealous",
+     "jealous"
+    ],
+    [
+     "w-naughty",
+     "naughty"
+    ],
+    [
+     "w-tidy",
+     "tidy"
+    ],
+    [
+     "w-messy",
+     "messy"
+    ],
+    [
+     "w-punctual",
+     "punctual"
+    ],
+    [
+     "w-forgetful",
+     "forgetful"
+    ],
+    [
+     "w-creative",
+     "creative"
+    ],
+    [
+     "w-curious",
+     "curious"
+    ],
+    [
+     "w-ambitious",
+     "ambitious"
+    ],
+    [
+     "w-modest",
+     "modest"
+    ],
+    [
+     "w-arrogant",
+     "arrogant"
+    ],
+    [
+     "w-reliable",
+     "reliable"
+    ],
+    [
+     "w-thoughtful",
+     "thoughtful"
+    ],
+    [
+     "w-energetic",
+     "energetic"
+    ],
+    [
+     "w-emotional",
+     "emotional"
+    ],
+    [
+     "w-bossy",
+     "bossy"
+    ],
+    [
+     "w-cruel",
+     "cruel"
+    ],
+    [
+     "w-annoying",
+     "annoying"
+    ],
+    [
+     "w-appearance",
+     "appearance"
+    ],
+    [
+     "w-personality",
+     "personality"
+    ],
+    [
+     "w-look-like",
+     "look like"
+    ],
+    [
+     "w-be-like",
+     "be like"
+    ],
+    [
+     "w-resemble",
+     "resemble"
+    ],
+    [
+     "w-similar",
+     "similar"
+    ],
+    [
+     "w-different",
+     "different"
+    ],
+    [
+     "w-twin",
+     "twin"
+    ],
+    [
+     "w-describe",
+     "describe"
+    ],
+    [
+     "w-compare",
+     "compare"
+    ],
+    [
+     "w-than",
+     "than"
+    ],
+    [
+     "w-both",
+     "both"
+    ],
+    [
+     "w-wear",
+     "wear"
+    ],
+    [
+     "w-smile",
+     "smile"
+    ],
+    [
+     "w-character",
+     "character"
+    ],
+    [
+     "w-football",
+     "football"
+    ],
+    [
+     "w-basketball",
+     "basketball"
+    ],
+    [
+     "w-volleyball",
+     "volleyball"
+    ],
+    [
+     "w-tennis",
+     "tennis"
+    ],
+    [
+     "w-table-tennis",
+     "table tennis"
+    ],
+    [
+     "w-badminton",
+     "badminton"
+    ],
+    [
+     "w-handball",
+     "handball"
+    ],
+    [
+     "w-baseball",
+     "baseball"
+    ],
+    [
+     "w-golf",
+     "golf"
+    ],
+    [
+     "w-ice-hockey",
+     "ice hockey"
+    ],
+    [
+     "w-chess",
+     "chess"
+    ],
+    [
+     "w-water-polo",
+     "water polo"
+    ],
+    [
+     "w-karate",
+     "karate"
+    ],
+    [
+     "w-judo",
+     "judo"
+    ],
+    [
+     "w-taekwondo",
+     "taekwondo"
+    ],
+    [
+     "w-yoga",
+     "yoga"
+    ],
+    [
+     "w-gymnastics",
+     "gymnastics"
+    ],
+    [
+     "w-aerobics",
+     "aerobics"
+    ],
+    [
+     "w-athletics",
+     "athletics"
+    ],
+    [
+     "w-boxing",
+     "boxing"
+    ]
+   ]
+  },
+  {
+   "id": "w3",
+   "note": "These are single dictionary headwords. Read each one on its own, clearly, with a natural falling intonation, exactly as written. Never add any other words.",
+   "lines": [
+    [
+     "w-wrestling",
+     "wrestling"
+    ],
+    [
+     "w-archery",
+     "archery"
+    ],
+    [
+     "w-fencing",
+     "fencing"
+    ],
+    [
+     "w-weightlifting",
+     "weightlifting"
+    ],
+    [
+     "w-ballet",
+     "ballet"
+    ],
+    [
+     "w-swimming",
+     "swimming"
+    ],
+    [
+     "w-cycling",
+     "cycling"
+    ],
+    [
+     "w-running",
+     "running"
+    ],
+    [
+     "w-jogging",
+     "jogging"
+    ],
+    [
+     "w-skiing",
+     "skiing"
+    ],
+    [
+     "w-ice-skating",
+     "ice skating"
+    ],
+    [
+     "w-surfing",
+     "surfing"
+    ],
+    [
+     "w-sailing",
+     "sailing"
+    ],
+    [
+     "w-hiking",
+     "hiking"
+    ],
+    [
+     "w-fishing",
+     "fishing"
+    ],
+    [
+     "w-camping",
+     "camping"
+    ],
+    [
+     "w-mountain-climbing",
+     "mountain climbing"
+    ],
+    [
+     "w-horse-riding",
+     "horse riding"
+    ],
+    [
+     "w-scuba-diving",
+     "scuba diving"
+    ],
+    [
+     "w-snowboarding",
+     "snowboarding"
+    ],
+    [
+     "w-skateboarding",
+     "skateboarding"
+    ],
+    [
+     "w-rafting",
+     "rafting"
+    ],
+    [
+     "w-canoeing",
+     "canoeing"
+    ],
+    [
+     "w-paragliding",
+     "paragliding"
+    ],
+    [
+     "w-bowling",
+     "bowling"
+    ],
+    [
+     "w-rowing",
+     "rowing"
+    ],
+    [
+     "w-ball",
+     "ball"
+    ],
+    [
+     "w-racket",
+     "racket"
+    ],
+    [
+     "w-bat",
+     "bat"
+    ],
+    [
+     "w-net",
+     "net"
+    ],
+    [
+     "w-helmet",
+     "helmet"
+    ],
+    [
+     "w-goggles",
+     "goggles"
+    ],
+    [
+     "w-gloves",
+     "gloves"
+    ],
+    [
+     "w-skis",
+     "skis"
+    ],
+    [
+     "w-skates",
+     "skates"
+    ],
+    [
+     "w-whistle",
+     "whistle"
+    ],
+    [
+     "w-trainers",
+     "trainers"
+    ],
+    [
+     "w-tracksuit",
+     "tracksuit"
+    ],
+    [
+     "w-swimsuit",
+     "swimsuit"
+    ],
+    [
+     "w-skateboard",
+     "skateboard"
+    ],
+    [
+     "w-surfboard",
+     "surfboard"
+    ],
+    [
+     "w-mat",
+     "mat"
+    ],
+    [
+     "w-bow-and-arrow",
+     "bow and arrow"
+    ],
+    [
+     "w-belt",
+     "belt"
+    ],
+    [
+     "w-court",
+     "court"
+    ],
+    [
+     "w-pitch",
+     "pitch"
+    ],
+    [
+     "w-field",
+     "field"
+    ],
+    [
+     "w-swimming-pool",
+     "swimming pool"
+    ],
+    [
+     "w-gym",
+     "gym"
+    ],
+    [
+     "w-stadium",
+     "stadium"
+    ],
+    [
+     "w-track",
+     "track"
+    ],
+    [
+     "w-ring",
+     "ring"
+    ],
+    [
+     "w-rink",
+     "rink"
+    ],
+    [
+     "w-slope",
+     "slope"
+    ],
+    [
+     "w-course",
+     "course"
+    ],
+    [
+     "w-sports-centre",
+     "sports centre"
+    ],
+    [
+     "w-athlete",
+     "athlete"
+    ],
+    [
+     "w-player",
+     "player"
+    ],
+    [
+     "w-team",
+     "team"
+    ],
+    [
+     "w-coach",
+     "coach"
+    ],
+    [
+     "w-referee",
+     "referee"
+    ],
+    [
+     "w-captain",
+     "captain"
+    ],
+    [
+     "w-fan",
+     "fan"
+    ],
+    [
+     "w-champion",
+     "champion"
+    ],
+    [
+     "w-competition",
+     "competition"
+    ],
+    [
+     "w-tournament",
+     "tournament"
+    ],
+    [
+     "w-match",
+     "match"
+    ],
+    [
+     "w-race",
+     "race"
+    ],
+    [
+     "w-medal",
+     "medal"
+    ],
+    [
+     "w-trophy",
+     "trophy"
+    ],
+    [
+     "w-winner",
+     "winner"
+    ],
+    [
+     "w-goal",
+     "goal"
+    ]
+   ]
+  },
+  {
+   "id": "w4",
+   "note": "These are single dictionary headwords. Read each one on its own, clearly, with a natural falling intonation, exactly as written. Never add any other words.",
+   "lines": [
+    [
+     "w-point",
+     "point"
+    ],
+    [
+     "w-olympic-games",
+     "Olympic Games"
+    ],
+    [
+     "w-win",
+     "win"
+    ],
+    [
+     "w-lose",
+     "lose"
+    ],
+    [
+     "w-beat",
+     "beat"
+    ],
+    [
+     "w-score",
+     "score"
+    ],
+    [
+     "w-kick",
+     "kick"
+    ],
+    [
+     "w-throw",
+     "throw"
+    ],
+    [
+     "w-catch",
+     "catch"
+    ],
+    [
+     "w-hit",
+     "hit"
+    ],
+    [
+     "w-jump",
+     "jump"
+    ],
+    [
+     "w-run",
+     "run"
+    ],
+    [
+     "w-train",
+     "train"
+    ],
+    [
+     "w-practise",
+     "practise"
+    ],
+    [
+     "w-compete",
+     "compete"
+    ],
+    [
+     "w-cheer",
+     "cheer"
+    ],
+    [
+     "w-warm-up",
+     "warm up"
+    ],
+    [
+     "w-exercise",
+     "exercise"
+    ],
+    [
+     "w-join",
+     "join"
+    ],
+    [
+     "w-dive",
+     "dive"
+    ],
+    [
+     "w-exciting",
+     "exciting"
+    ],
+    [
+     "w-boring",
+     "boring"
+    ],
+    [
+     "w-dangerous",
+     "dangerous"
+    ],
+    [
+     "w-safe",
+     "safe"
+    ],
+    [
+     "w-tiring",
+     "tiring"
+    ],
+    [
+     "w-relaxing",
+     "relaxing"
+    ],
+    [
+     "w-enjoyable",
+     "enjoyable"
+    ],
+    [
+     "w-popular",
+     "popular"
+    ],
+    [
+     "w-expensive",
+     "expensive"
+    ],
+    [
+     "w-cheap",
+     "cheap"
+    ],
+    [
+     "w-healthy",
+     "healthy"
+    ],
+    [
+     "w-difficult",
+     "difficult"
+    ],
+    [
+     "w-easy",
+     "easy"
+    ],
+    [
+     "w-interesting",
+     "interesting"
+    ],
+    [
+     "w-fast",
+     "fast"
+    ],
+    [
+     "w-slow",
+     "slow"
+    ],
+    [
+     "w-fun",
+     "fun"
+    ],
+    [
+     "w-challenging",
+     "challenging"
+    ],
+    [
+     "w-extreme-sports",
+     "extreme sports"
+    ],
+    [
+     "w-team-sports",
+     "team sports"
+    ],
+    [
+     "w-individual-sports",
+     "individual sports"
+    ],
+    [
+     "w-indoor",
+     "indoor"
+    ],
+    [
+     "w-outdoor",
+     "outdoor"
+    ],
+    [
+     "w-always",
+     "always"
+    ],
+    [
+     "w-usually",
+     "usually"
+    ],
+    [
+     "w-often",
+     "often"
+    ],
+    [
+     "w-sometimes",
+     "sometimes"
+    ],
+    [
+     "w-rarely",
+     "rarely"
+    ],
+    [
+     "w-seldom",
+     "seldom"
+    ],
+    [
+     "w-hardly-ever",
+     "hardly ever"
+    ],
+    [
+     "w-never",
+     "never"
+    ],
+    [
+     "w-once",
+     "once"
+    ],
+    [
+     "w-twice",
+     "twice"
+    ],
+    [
+     "w-three-times",
+     "three times"
+    ],
+    [
+     "w-every-day",
+     "every day"
+    ],
+    [
+     "w-at-weekends",
+     "at weekends"
+    ],
+    [
+     "w-how-often",
+     "how often"
+    ],
+    [
+     "w-love",
+     "love"
+    ],
+    [
+     "w-like",
+     "like"
+    ],
+    [
+     "w-enjoy",
+     "enjoy"
+    ],
+    [
+     "w-prefer",
+     "prefer"
+    ],
+    [
+     "w-dont-mind",
+     "don't mind"
+    ],
+    [
+     "w-dislike",
+     "dislike"
+    ],
+    [
+     "w-hate",
+     "hate"
+    ],
+    [
+     "w-cant-stand",
+     "can't stand"
+    ],
+    [
+     "w-be-interested-in",
+     "be interested in"
+    ],
+    [
+     "w-be-good-at",
+     "be good at"
+    ],
+    [
+     "w-be-keen-on",
+     "be keen on"
+    ],
+    [
+     "w-be-fond-of",
+     "be fond of"
+    ],
+    [
+     "w-be-crazy-about",
+     "be crazy about"
+    ],
+    [
+     "w-favourite",
+     "favourite"
+    ],
+    [
+     "w-hobby",
+     "hobby"
+    ]
+   ]
+  },
+  {
+   "id": "s1",
+   "note": "These are example sentences in a vocabulary app. Read each sentence as a separate, natural sentence with clear, friendly rhythm, exactly as written.",
+   "lines": [
+    [
+     "s-tall",
+     "My brother is tall and slim."
+    ],
+    [
+     "s-short",
+     "Emma is short, but she is a great basketball player."
+    ],
+    [
+     "s-medium-height",
+     "My mother is of medium height."
+    ],
+    [
+     "s-slim",
+     "She is slim and very pretty."
+    ],
+    [
+     "s-thin",
+     "My grandfather is thin and old."
+    ],
+    [
+     "s-fat",
+     "Our cat is fat because it eats a lot."
+    ],
+    [
+     "s-overweight",
+     "He is a bit overweight, so he goes jogging."
+    ],
+    [
+     "s-plump",
+     "The baby has got plump cheeks."
+    ],
+    [
+     "s-well-built",
+     "The boxer is tall and well-built."
+    ],
+    [
+     "s-skinny",
+     "My little cousin is skinny but very strong."
+    ],
+    [
+     "s-strong",
+     "Weightlifters are very strong."
+    ],
+    [
+     "s-weak",
+     "I feel weak when I am ill."
+    ],
+    [
+     "s-height",
+     "We measure our height every year."
+    ],
+    [
+     "s-weight",
+     "Exercise helps you control your weight."
+    ],
+    [
+     "s-young",
+     "My aunt is young and beautiful."
+    ],
+    [
+     "s-old",
+     "My grandmother is old but very active."
+    ],
+    [
+     "s-middle-aged",
+     "Our teacher is a middle-aged man."
+    ],
+    [
+     "s-elderly",
+     "We help the elderly woman next door."
+    ],
+    [
+     "s-teenager",
+     "My sister is a teenager. She is fifteen."
+    ],
+    [
+     "s-hair",
+     "She has got long black hair."
+    ],
+    [
+     "s-long",
+     "Elif has got long wavy hair."
+    ],
+    [
+     "s-shoulder-length",
+     "My mum has got shoulder-length brown hair."
+    ],
+    [
+     "s-straight",
+     "I have got straight blonde hair."
+    ],
+    [
+     "s-curly",
+     "My best friend has got curly red hair."
+    ],
+    [
+     "s-wavy",
+     "Her hair is wavy and shiny."
+    ],
+    [
+     "s-blonde",
+     "The girl with blonde hair is my cousin."
+    ],
+    [
+     "s-fair",
+     "He has got fair hair and blue eyes."
+    ],
+    [
+     "s-dark",
+     "My dad has got dark hair and dark eyes."
+    ],
+    [
+     "s-brown",
+     "She has got brown eyes."
+    ],
+    [
+     "s-black",
+     "He has got short black hair."
+    ],
+    [
+     "s-red",
+     "Anne has got red hair and freckles."
+    ],
+    [
+     "s-grey",
+     "My grandpa has got grey hair."
+    ],
+    [
+     "s-bald",
+     "Mr Brown is bald and wears glasses."
+    ],
+    [
+     "s-ponytail",
+     "Zeynep usually wears her hair in a ponytail."
+    ],
+    [
+     "s-braids",
+     "She has got two long braids."
+    ],
+    [
+     "s-fringe",
+     "My sister has got a fringe."
+    ],
+    [
+     "s-eye",
+     "She has got big green eyes."
+    ],
+    [
+     "s-beard",
+     "My uncle has got a long beard."
+    ],
+    [
+     "s-moustache",
+     "Grandpa has got a grey moustache."
+    ],
+    [
+     "s-freckles",
+     "She has got freckles on her nose."
+    ],
+    [
+     "s-glasses",
+     "He wears glasses."
+    ],
+    [
+     "s-braces",
+     "I wear braces on my teeth."
+    ],
+    [
+     "s-dimples",
+     "She has got dimples when she smiles."
+    ],
+    [
+     "s-mole",
+     "He has got a small mole on his cheek."
+    ],
+    [
+     "s-scar",
+     "Harry Potter has got a scar on his forehead."
+    ],
+    [
+     "s-wrinkles",
+     "My grandmother has got wrinkles on her face."
+    ],
+    [
+     "s-round-face",
+     "The baby has got a round face."
+    ],
+    [
+     "s-earrings",
+     "She wears silver earrings."
+    ]
+   ]
+  },
+  {
+   "id": "s2",
+   "note": "These are example sentences in a vocabulary app. Read each sentence as a separate, natural sentence with clear, friendly rhythm, exactly as written.",
+   "lines": [
+    [
+     "s-good-looking",
+     "Her brother is very good-looking."
+    ],
+    [
+     "s-handsome",
+     "The actor is tall and handsome."
+    ],
+    [
+     "s-beautiful",
+     "The singer has got beautiful eyes."
+    ],
+    [
+     "s-pretty",
+     "Your little sister is so pretty."
+    ],
+    [
+     "s-cute",
+     "Look at the cute baby!"
+    ],
+    [
+     "s-ugly",
+     "The monster in the film is ugly."
+    ],
+    [
+     "s-attractive",
+     "She has got an attractive smile."
+    ],
+    [
+     "s-friendly",
+     "Our new neighbour is very friendly."
+    ],
+    [
+     "s-unfriendly",
+     "The shop assistant was unfriendly to us."
+    ],
+    [
+     "s-kind",
+     "My teacher is kind and patient."
+    ],
+    [
+     "s-helpful",
+     "Ali is helpful. He always helps his friends."
+    ],
+    [
+     "s-generous",
+     "My grandfather is generous. He often gives us presents."
+    ],
+    [
+     "s-mean",
+     "Don't be mean! Share your sweets."
+    ],
+    [
+     "s-selfish",
+     "He never shares his toys. He is selfish."
+    ],
+    [
+     "s-honest",
+     "An honest person never tells lies."
+    ],
+    [
+     "s-dishonest",
+     "A dishonest person often tells lies."
+    ],
+    [
+     "s-polite",
+     "Say \"please\" and \"thank you\". Be polite!"
+    ],
+    [
+     "s-rude",
+     "It is rude to talk with your mouth full."
+    ],
+    [
+     "s-hard-working",
+     "Selin is hard-working. She studies every day."
+    ],
+    [
+     "s-lazy",
+     "My cat is lazy. It sleeps all day."
+    ],
+    [
+     "s-clever",
+     "Ece is very clever. She solves puzzles quickly."
+    ],
+    [
+     "s-smart",
+     "Dolphins are smart animals."
+    ],
+    [
+     "s-intelligent",
+     "She is an intelligent student."
+    ],
+    [
+     "s-funny",
+     "My uncle tells funny jokes."
+    ],
+    [
+     "s-serious",
+     "Our headmaster looks serious."
+    ],
+    [
+     "s-cheerful",
+     "She is always cheerful and smiling."
+    ],
+    [
+     "s-outgoing",
+     "Deniz is outgoing. She has got lots of friends."
+    ],
+    [
+     "s-sociable",
+     "Sociable people love parties."
+    ],
+    [
+     "s-shy",
+     "Burak is shy. He doesn't talk much in class."
+    ],
+    [
+     "s-quiet",
+     "My cousin is quiet. She listens more than she talks."
+    ],
+    [
+     "s-talkative",
+     "My sister is talkative. She never stops talking!"
+    ],
+    [
+     "s-calm",
+     "Stay calm in the exam."
+    ],
+    [
+     "s-nervous",
+     "I feel nervous before exams."
+    ],
+    [
+     "s-patient",
+     "A good teacher is patient."
+    ],
+    [
+     "s-impatient",
+     "Don't be impatient! The bus is coming."
+    ],
+    [
+     "s-brave",
+     "Firefighters are very brave."
+    ],
+    [
+     "s-careful",
+     "Be careful! The floor is wet."
+    ],
+    [
+     "s-careless",
+     "He is careless. He always loses his keys."
+    ],
+    [
+     "s-confident",
+     "She is confident on the stage."
+    ],
+    [
+     "s-easygoing",
+     "My dad is easygoing. He never gets angry."
+    ],
+    [
+     "s-stubborn",
+     "My little brother is stubborn. He never listens!"
+    ],
+    [
+     "s-grumpy",
+     "Grandpa is grumpy in the morning."
+    ],
+    [
+     "s-moody",
+     "My brother is moody. He is happy one minute and angry the next."
+    ],
+    [
+     "s-jealous",
+     "Don't be jealous of your friends."
+    ],
+    [
+     "s-naughty",
+     "The naughty kitten plays with my socks."
+    ],
+    [
+     "s-tidy",
+     "Ayşe is tidy. Her desk is always clean."
+    ],
+    [
+     "s-messy",
+     "My brother is messy. His clothes are everywhere."
+    ],
+    [
+     "s-punctual",
+     "Be punctual. The lesson starts at nine."
+    ]
+   ]
+  },
+  {
+   "id": "s3",
+   "note": "These are example sentences in a vocabulary app. Read each sentence as a separate, natural sentence with clear, friendly rhythm, exactly as written.",
+   "lines": [
+    [
+     "s-forgetful",
+     "I am forgetful. I often forget my homework."
+    ],
+    [
+     "s-creative",
+     "Artists are creative."
+    ],
+    [
+     "s-curious",
+     "Cats are curious animals."
+    ],
+    [
+     "s-ambitious",
+     "She is ambitious. She wants to be a doctor."
+    ],
+    [
+     "s-modest",
+     "He is a great player, but he is modest."
+    ],
+    [
+     "s-arrogant",
+     "Arrogant people think they are better than others."
+    ],
+    [
+     "s-reliable",
+     "My best friend is reliable. She always keeps her promises."
+    ],
+    [
+     "s-thoughtful",
+     "My sister is thoughtful. She always remembers my birthday."
+    ],
+    [
+     "s-energetic",
+     "Children are energetic."
+    ],
+    [
+     "s-emotional",
+     "She cries at sad films. She is emotional."
+    ],
+    [
+     "s-bossy",
+     "My older sister is bossy. She always tells me what to do."
+    ],
+    [
+     "s-cruel",
+     "Hurting animals is cruel."
+    ],
+    [
+     "s-annoying",
+     "My alarm clock is so annoying!"
+    ],
+    [
+     "s-appearance",
+     "Appearance is not everything."
+    ],
+    [
+     "s-personality",
+     "She has got a great personality."
+    ],
+    [
+     "s-look-like",
+     "I look like my mother."
+    ],
+    [
+     "s-be-like",
+     "What is your best friend like?"
+    ],
+    [
+     "s-resemble",
+     "She resembles her father."
+    ],
+    [
+     "s-similar",
+     "My sister and I are similar."
+    ],
+    [
+     "s-different",
+     "Twins can be very different."
+    ],
+    [
+     "s-twin",
+     "Can and Cem are twins."
+    ],
+    [
+     "s-describe",
+     "Can you describe your best friend?"
+    ],
+    [
+     "s-compare",
+     "Let's compare the two pictures."
+    ],
+    [
+     "s-than",
+     "I am taller than my sister."
+    ],
+    [
+     "s-both",
+     "Both of them have got curly hair."
+    ],
+    [
+     "s-wear",
+     "She wears glasses and earrings."
+    ],
+    [
+     "s-smile",
+     "She has got a lovely smile."
+    ],
+    [
+     "s-character",
+     "My favourite character in the book is brave."
+    ],
+    [
+     "s-football",
+     "My brother plays football every Saturday."
+    ],
+    [
+     "s-basketball",
+     "We play basketball in the school gym."
+    ],
+    [
+     "s-volleyball",
+     "Turkey has got a great women's volleyball team."
+    ],
+    [
+     "s-tennis",
+     "She plays tennis twice a week."
+    ],
+    [
+     "s-table-tennis",
+     "Do you play table tennis after school?"
+    ],
+    [
+     "s-badminton",
+     "We sometimes play badminton in the garden."
+    ],
+    [
+     "s-handball",
+     "Our class plays handball in PE lessons."
+    ],
+    [
+     "s-baseball",
+     "Baseball is very popular in the USA."
+    ],
+    [
+     "s-golf",
+     "My uncle plays golf on Sundays."
+    ],
+    [
+     "s-ice-hockey",
+     "Ice hockey players wear helmets."
+    ],
+    [
+     "s-chess",
+     "My grandpa and I play chess every evening."
+    ],
+    [
+     "s-water-polo",
+     "Water polo players are very strong swimmers."
+    ],
+    [
+     "s-karate",
+     "I do karate at a sports club."
+    ],
+    [
+     "s-judo",
+     "My cousin does judo three times a week."
+    ],
+    [
+     "s-taekwondo",
+     "Elif does taekwondo and she has got a black belt."
+    ],
+    [
+     "s-yoga",
+     "My mother does yoga every morning."
+    ],
+    [
+     "s-gymnastics",
+     "She does gymnastics, so she is very flexible."
+    ],
+    [
+     "s-aerobics",
+     "My aunt does aerobics at the gym."
+    ],
+    [
+     "s-athletics",
+     "Do you do athletics at school?"
+    ],
+    [
+     "s-boxing",
+     "My uncle does boxing, so he is very strong."
+    ]
+   ]
+  },
+  {
+   "id": "s4",
+   "note": "These are example sentences in a vocabulary app. Read each sentence as a separate, natural sentence with clear, friendly rhythm, exactly as written.",
+   "lines": [
+    [
+     "s-wrestling",
+     "Wrestling is a traditional sport in Turkey."
+    ],
+    [
+     "s-archery",
+     "Mete Gazoz does archery. He is an Olympic champion."
+    ],
+    [
+     "s-fencing",
+     "We do fencing at the sports centre."
+    ],
+    [
+     "s-weightlifting",
+     "Weightlifting needs a lot of power."
+    ],
+    [
+     "s-ballet",
+     "My sister does ballet on Tuesdays."
+    ],
+    [
+     "s-swimming",
+     "I go swimming in summer."
+    ],
+    [
+     "s-cycling",
+     "We go cycling in the park at weekends."
+    ],
+    [
+     "s-running",
+     "I go running with my dad on Sundays."
+    ],
+    [
+     "s-jogging",
+     "My dad goes jogging every morning."
+    ],
+    [
+     "s-skiing",
+     "We go skiing in Uludağ in winter."
+    ],
+    [
+     "s-ice-skating",
+     "Ice skating is fun, but I often fall!"
+    ],
+    [
+     "s-surfing",
+     "You need big waves to go surfing."
+    ],
+    [
+     "s-sailing",
+     "They go sailing on the sea in summer."
+    ],
+    [
+     "s-hiking",
+     "We often go hiking in the mountains."
+    ],
+    [
+     "s-fishing",
+     "Grandpa goes fishing on Sundays."
+    ],
+    [
+     "s-camping",
+     "We go camping near the lake every summer."
+    ],
+    [
+     "s-mountain-climbing",
+     "Mountain climbing is dangerous but exciting."
+    ],
+    [
+     "s-horse-riding",
+     "I go horse riding once a month."
+    ],
+    [
+     "s-scuba-diving",
+     "You can see colourful fish when you go scuba diving."
+    ],
+    [
+     "s-snowboarding",
+     "My cousin goes snowboarding in Erciyes."
+    ],
+    [
+     "s-skateboarding",
+     "He goes skateboarding in the park after school."
+    ],
+    [
+     "s-rafting",
+     "Rafting in Köprülü Kanyon is very exciting."
+    ],
+    [
+     "s-canoeing",
+     "We go canoeing on the river."
+    ],
+    [
+     "s-paragliding",
+     "Tourists go paragliding in Ölüdeniz."
+    ],
+    [
+     "s-bowling",
+     "We go bowling on Friday evenings."
+    ],
+    [
+     "s-rowing",
+     "Rowing makes your arms strong."
+    ],
+    [
+     "s-ball",
+     "Kick the ball to me!"
+    ],
+    [
+     "s-racket",
+     "You need a racket to play tennis."
+    ],
+    [
+     "s-bat",
+     "Baseball players hit the ball with a bat."
+    ],
+    [
+     "s-net",
+     "The ball hit the net."
+    ],
+    [
+     "s-helmet",
+     "Always wear a helmet when you go cycling."
+    ],
+    [
+     "s-goggles",
+     "I wear goggles when I go swimming."
+    ],
+    [
+     "s-gloves",
+     "Boxers wear big gloves."
+    ],
+    [
+     "s-skis",
+     "My skis are too long for me."
+    ],
+    [
+     "s-skates",
+     "I put on my skates and go to the rink."
+    ],
+    [
+     "s-whistle",
+     "The referee blows the whistle."
+    ],
+    [
+     "s-trainers",
+     "Wear your trainers for the PE lesson."
+    ],
+    [
+     "s-tracksuit",
+     "He wears a blue tracksuit."
+    ],
+    [
+     "s-swimsuit",
+     "Don't forget your swimsuit!"
+    ],
+    [
+     "s-skateboard",
+     "I have got a new skateboard."
+    ],
+    [
+     "s-surfboard",
+     "He carries his surfboard to the beach."
+    ],
+    [
+     "s-mat",
+     "Put your yoga mat on the floor."
+    ],
+    [
+     "s-bow-and-arrow",
+     "In archery, you need a bow and arrow."
+    ],
+    [
+     "s-belt",
+     "She has got a black belt in karate."
+    ],
+    [
+     "s-court",
+     "We play tennis on the tennis court."
+    ],
+    [
+     "s-pitch",
+     "The players are on the football pitch."
+    ],
+    [
+     "s-field",
+     "They play baseball on a big field."
+    ],
+    [
+     "s-swimming-pool",
+     "There is a swimming pool in our school."
+    ]
+   ]
+  },
+  {
+   "id": "s5",
+   "note": "These are example sentences in a vocabulary app. Read each sentence as a separate, natural sentence with clear, friendly rhythm, exactly as written.",
+   "lines": [
+    [
+     "s-gym",
+     "My mum goes to the gym three times a week."
+    ],
+    [
+     "s-stadium",
+     "The stadium is full of fans."
+    ],
+    [
+     "s-track",
+     "The runners are on the track."
+    ],
+    [
+     "s-ring",
+     "The two boxers are in the ring."
+    ],
+    [
+     "s-rink",
+     "We go ice skating at the rink."
+    ],
+    [
+     "s-slope",
+     "This ski slope is very steep."
+    ],
+    [
+     "s-course",
+     "There are eighteen holes on a golf course."
+    ],
+    [
+     "s-sports-centre",
+     "The sports centre opens at eight."
+    ],
+    [
+     "s-athlete",
+     "Athletes train very hard."
+    ],
+    [
+     "s-player",
+     "He is a basketball player."
+    ],
+    [
+     "s-team",
+     "There are eleven players in a football team."
+    ],
+    [
+     "s-coach",
+     "Our coach is strict but fair."
+    ],
+    [
+     "s-referee",
+     "The referee shows a yellow card."
+    ],
+    [
+     "s-captain",
+     "She is the captain of our volleyball team."
+    ],
+    [
+     "s-fan",
+     "The fans are singing in the stadium."
+    ],
+    [
+     "s-champion",
+     "Our school team is the city champion."
+    ],
+    [
+     "s-competition",
+     "I want to join the swimming competition."
+    ],
+    [
+     "s-tournament",
+     "Our school has a chess tournament every year."
+    ],
+    [
+     "s-match",
+     "The match starts at seven o'clock."
+    ],
+    [
+     "s-race",
+     "Who is the winner of the race?"
+    ],
+    [
+     "s-medal",
+     "She has got three gold medals."
+    ],
+    [
+     "s-trophy",
+     "The champion lifts the trophy."
+    ],
+    [
+     "s-winner",
+     "The winner gets a gold medal."
+    ],
+    [
+     "s-goal",
+     "Arda scores a goal!"
+    ],
+    [
+     "s-point",
+     "Our team needs two more points."
+    ],
+    [
+     "s-olympic-games",
+     "The Olympic Games take place every four years."
+    ],
+    [
+     "s-win",
+     "Our team always wins!"
+    ],
+    [
+     "s-lose",
+     "Nobody likes to lose a match."
+    ],
+    [
+     "s-beat",
+     "Our school team beat their team 3-1."
+    ],
+    [
+     "s-score",
+     "He scores a lot of goals."
+    ],
+    [
+     "s-kick",
+     "Kick the ball hard!"
+    ],
+    [
+     "s-throw",
+     "Throw the ball to me!"
+    ],
+    [
+     "s-catch",
+     "Can you catch the ball?"
+    ],
+    [
+     "s-hit",
+     "She hits the ball with her racket."
+    ],
+    [
+     "s-jump",
+     "Kangaroos can jump very high."
+    ],
+    [
+     "s-run",
+     "I run in the park every morning."
+    ],
+    [
+     "s-train",
+     "The team trains every afternoon."
+    ],
+    [
+     "s-practise",
+     "I practise the piano every day."
+    ],
+    [
+     "s-compete",
+     "Athletes from many countries compete in the Olympics."
+    ],
+    [
+     "s-cheer",
+     "We cheer for our team."
+    ],
+    [
+     "s-warm-up",
+     "Always warm up before you run."
+    ],
+    [
+     "s-exercise",
+     "Doctors say we should exercise every day."
+    ],
+    [
+     "s-join",
+     "I want to join the school basketball team."
+    ],
+    [
+     "s-dive",
+     "He dives into the pool."
+    ],
+    [
+     "s-exciting",
+     "Football matches are exciting."
+    ],
+    [
+     "s-boring",
+     "I think golf is boring."
+    ],
+    [
+     "s-dangerous",
+     "Mountain climbing is dangerous."
+    ],
+    [
+     "s-safe",
+     "Walking is a safe sport."
+    ]
+   ]
+  },
+  {
+   "id": "s6",
+   "note": "These are example sentences in a vocabulary app. Read each sentence as a separate, natural sentence with clear, friendly rhythm, exactly as written.",
+   "lines": [
+    [
+     "s-tiring",
+     "Running a marathon is very tiring."
+    ],
+    [
+     "s-relaxing",
+     "Yoga is relaxing."
+    ],
+    [
+     "s-enjoyable",
+     "Swimming in the sea is enjoyable."
+    ],
+    [
+     "s-popular",
+     "Football is the most popular sport in Turkey."
+    ],
+    [
+     "s-expensive",
+     "Skiing is an expensive sport."
+    ],
+    [
+     "s-cheap",
+     "Running is cheap. You only need trainers."
+    ],
+    [
+     "s-healthy",
+     "Swimming is a healthy sport."
+    ],
+    [
+     "s-difficult",
+     "Gymnastics is difficult."
+    ],
+    [
+     "s-easy",
+     "Jogging is easy for me."
+    ],
+    [
+     "s-interesting",
+     "Fencing is an interesting sport."
+    ],
+    [
+     "s-fast",
+     "Cheetahs are very fast."
+    ],
+    [
+     "s-slow",
+     "Tortoises are slow."
+    ],
+    [
+     "s-fun",
+     "Bowling with friends is fun."
+    ],
+    [
+     "s-challenging",
+     "Rafting is challenging but fun."
+    ],
+    [
+     "s-extreme-sports",
+     "Paragliding and rafting are extreme sports."
+    ],
+    [
+     "s-team-sports",
+     "Football and volleyball are team sports."
+    ],
+    [
+     "s-individual-sports",
+     "Tennis and swimming are individual sports."
+    ],
+    [
+     "s-indoor",
+     "Basketball is an indoor sport."
+    ],
+    [
+     "s-outdoor",
+     "Hiking is an outdoor activity."
+    ],
+    [
+     "s-always",
+     "I always do my homework."
+    ],
+    [
+     "s-usually",
+     "She usually goes swimming on Saturdays."
+    ],
+    [
+     "s-often",
+     "We often play volleyball after school."
+    ],
+    [
+     "s-sometimes",
+     "I sometimes go fishing with my grandpa."
+    ],
+    [
+     "s-rarely",
+     "He rarely plays golf."
+    ],
+    [
+     "s-seldom",
+     "They seldom go skiing."
+    ],
+    [
+     "s-hardly-ever",
+     "I hardly ever watch boxing."
+    ],
+    [
+     "s-never",
+     "My mum never does boxing."
+    ],
+    [
+     "s-once",
+     "I go to the gym once a week."
+    ],
+    [
+     "s-twice",
+     "We play tennis twice a month."
+    ],
+    [
+     "s-three-times",
+     "She does yoga three times a week."
+    ],
+    [
+     "s-every-day",
+     "My dad walks to work every day."
+    ],
+    [
+     "s-at-weekends",
+     "We go cycling at weekends."
+    ],
+    [
+     "s-how-often",
+     "How often do you go swimming?"
+    ],
+    [
+     "s-love",
+     "I love playing volleyball."
+    ],
+    [
+     "s-like",
+     "Do you like swimming?"
+    ],
+    [
+     "s-enjoy",
+     "She enjoys doing yoga."
+    ],
+    [
+     "s-prefer",
+     "I prefer basketball to football."
+    ],
+    [
+     "s-dont-mind",
+     "I don't mind watching tennis."
+    ],
+    [
+     "s-dislike",
+     "Many people dislike waking up early."
+    ],
+    [
+     "s-hate",
+     "My brother hates losing."
+    ],
+    [
+     "s-cant-stand",
+     "I can't stand boxing. It is too violent."
+    ],
+    [
+     "s-be-interested-in",
+     "I am interested in extreme sports."
+    ],
+    [
+     "s-be-good-at",
+     "She is good at swimming."
+    ],
+    [
+     "s-be-keen-on",
+     "He is keen on cycling."
+    ],
+    [
+     "s-be-fond-of",
+     "My grandmother is fond of gardening."
+    ],
+    [
+     "s-be-crazy-about",
+     "Ahmet is crazy about football."
+    ],
+    [
+     "s-favourite",
+     "My favourite sport is tennis."
+    ],
+    [
+     "s-hobby",
+     "My hobby is horse riding."
+    ]
+   ]
+  },
+  {
+   "id": "x1",
+   "note": "These are lines from English lessons and short reading texts. Read each line naturally and clearly, like a friendly teacher reading to a student, exactly as written.",
+   "lines": [
+    [
+     "x-syniao",
+     "What does your sister look like?"
+    ],
+    [
+     "x-54zfcz",
+     "She is tall and slim. She has got long curly hair."
+    ],
+    [
+     "x-14soio4",
+     "My father is tall and well-built."
+    ],
+    [
+     "x-f6ztip",
+     "My mother is of medium height."
+    ],
+    [
+     "x-ieaqcq",
+     "Our teacher is middle-aged."
+    ],
+    [
+     "x-11juitx",
+     "She has got blue eyes."
+    ],
+    [
+     "x-hlpiml",
+     "I have got freckles on my nose."
+    ],
+    [
+     "x-13u4ahy",
+     "Has he got a moustache? No, he hasn't."
+    ],
+    [
+     "x-zpza3b",
+     "She has got long curly black hair."
+    ],
+    [
+     "x-r3m5h8",
+     "He wears glasses."
+    ],
+    [
+     "x-rw9r4v",
+     "She wears braces."
+    ],
+    [
+     "x-1d1guct",
+     "The girl with glasses is my cousin."
+    ],
+    [
+     "x-7rrz5c",
+     "The man with a beard is our neighbour."
+    ],
+    [
+     "x-1p4pnr0",
+     "Which one is your brother?"
+    ],
+    [
+     "x-guk1sg",
+     "The tall boy with curly hair."
+    ],
+    [
+     "x-qw3gn2",
+     "What is your best friend like?"
+    ],
+    [
+     "x-a75x79",
+     "She is friendly and helpful."
+    ],
+    [
+     "x-n5cier",
+     "What are your parents like? They are kind and patient."
+    ],
+    [
+     "x-ic3ckk",
+     "She is clever and hard-working."
+    ],
+    [
+     "x-8bxvjw",
+     "He is funny, but he is a bit lazy."
+    ],
+    [
+     "x-z6tul7",
+     "I look like my mother."
+    ],
+    [
+     "x-1agansx",
+     "Who does Ali look like? He looks like his grandfather."
+    ],
+    [
+     "x-3oqaev",
+     "Do you look like your father? No, I don't."
+    ],
+    [
+     "x-vokul0",
+     "She doesn't look like her sister."
+    ],
+    [
+     "x-198nrpb",
+     "What does your cousin look like?"
+    ],
+    [
+     "x-1gz4yzw",
+     "She is short and a bit plump. She has got wavy black hair."
+    ],
+    [
+     "x-fu1fjr",
+     "What is she like?"
+    ],
+    [
+     "x-168qb4n",
+     "She is very funny and talkative."
+    ],
+    [
+     "x-2mtq5l",
+     "Who does she look like?"
+    ],
+    [
+     "x-ck7im4",
+     "She looks like her mother."
+    ],
+    [
+     "x-90kaiy",
+     "Ali is taller than Ayşe."
+    ],
+    [
+     "x-149syou",
+     "My sister is more hard-working than me."
+    ],
+    [
+     "x-zqok6h",
+     "My grandmother is more patient than my grandfather."
+    ],
+    [
+     "x-yrdiyt",
+     "My English is better than my Maths."
+    ],
+    [
+     "x-cbpcf0",
+     "Today the weather is worse than yesterday."
+    ],
+    [
+     "x-1bgihln",
+     "Can is as tall as Cem."
+    ],
+    [
+     "x-1cj6xmy",
+     "I am not as tall as my brother."
+    ],
+    [
+     "x-tqd5bk",
+     "My best friend's name is Defne. She is twelve years old."
+    ],
+    [
+     "x-11f9z4w",
+     "She is tall and slim. She has got long straight black hair and big brown eyes."
+    ],
+    [
+     "x-150galy",
+     "She is very friendly and helpful. She always helps me with my homework."
+    ]
+   ]
+  },
+  {
+   "id": "x2",
+   "note": "These are lines from English lessons and short reading texts. Read each line naturally and clearly, like a friendly teacher reading to a student, exactly as written.",
+   "lines": [
+    [
+     "x-15obplc",
+     "She is taller than me, but I am more talkative than her."
+    ],
+    [
+     "x-1ok7z57",
+     "I love her because she is a great friend."
+    ],
+    [
+     "x-oqyqcy",
+     "We play volleyball at school."
+    ],
+    [
+     "x-3yrenh",
+     "My grandpa and I play chess every evening."
+    ],
+    [
+     "x-11fdp11",
+     "She does yoga every morning."
+    ],
+    [
+     "x-1nd7foq",
+     "I do karate at a sports club."
+    ],
+    [
+     "x-qg49pw",
+     "We go camping in summer."
+    ],
+    [
+     "x-1knj6py",
+     "My dad goes jogging every morning."
+    ],
+    [
+     "x-1m2bsw4",
+     "I play tennis on Saturdays."
+    ],
+    [
+     "x-19edff6",
+     "She goes swimming after school."
+    ],
+    [
+     "x-alv2cv",
+     "My brother watches football matches on TV."
+    ],
+    [
+     "x-1r9tabc",
+     "Zeynep studies English every day."
+    ],
+    [
+     "x-1m35per",
+     "I don't like golf."
+    ],
+    [
+     "x-15tvzvn",
+     "She doesn't play chess."
+    ],
+    [
+     "x-1rstkvf",
+     "What sport do you do? I do judo."
+    ],
+    [
+     "x-zyt7go",
+     "When does she go swimming? On Wednesdays."
+    ],
+    [
+     "x-1936a9v",
+     "Where do they play football? In the park."
+    ],
+    [
+     "x-1esgiti",
+     "What time does the match start? At seven."
+    ],
+    [
+     "x-1yxmd7i",
+     "We go skiing in winter."
+    ],
+    [
+     "x-1r3y4ic",
+     "I go to the gym at weekends."
+    ],
+    [
+     "x-1r073lw",
+     "I always go swimming on Sundays."
+    ],
+    [
+     "x-ws9r2",
+     "She usually plays tennis after school."
+    ],
+    [
+     "x-1bkgcer",
+     "He is never late for training."
+    ],
+    [
+     "x-1jzyhuj",
+     "Do you often go cycling?"
+    ],
+    [
+     "x-m8da2f",
+     "I don't usually watch tennis."
+    ],
+    [
+     "x-nbo0k8",
+     "How often do you play basketball? Twice a week."
+    ],
+    [
+     "x-1avt8jj",
+     "She goes horse riding once a month."
+    ],
+    [
+     "x-14ufmkv",
+     "Emre always goes swimming. He goes swimming every day."
+    ],
+    [
+     "x-1tzfwtl",
+     "He plays tennis twice a week."
+    ],
+    [
+     "x-1wx9rd7",
+     "He never plays chess."
+    ],
+    [
+     "x-1fs75p4",
+     "I love playing volleyball."
+    ],
+    [
+     "x-1pvl6q2",
+     "She enjoys doing yoga."
+    ],
+    [
+     "x-114wft1",
+     "I can't stand losing."
+    ],
+    [
+     "x-1m3ua0v",
+     "Do you like doing yoga? Yes, I do."
+    ],
+    [
+     "x-1ukzggo",
+     "What is your favourite sport? My favourite sport is tennis."
+    ],
+    [
+     "x-zxanhl",
+     "Which sport do you prefer, tennis or badminton? I prefer tennis."
+    ],
+    [
+     "x-1pc6p40",
+     "What do you think about boxing? I think it is dangerous."
+    ],
+    [
+     "x-16bldld",
+     "Why do you like swimming? Because it is relaxing."
+    ],
+    [
+     "x-2tmu1l",
+     "Rafting is more exciting than fishing."
+    ],
+    [
+     "x-3ho2rg",
+     "Running is cheaper than skiing."
+    ]
+   ]
+  },
+  {
+   "id": "x3",
+   "note": "These are lines from English lessons and short reading texts. Read each line naturally and clearly, like a friendly teacher reading to a student, exactly as written.",
+   "lines": [
+    [
+     "x-q6jhns",
+     "Mountain climbing is more dangerous than cycling."
+    ],
+    [
+     "x-114gi22",
+     "Yoga is more relaxing than boxing."
+    ],
+    [
+     "x-473gge",
+     "The referee blows the whistle."
+    ],
+    [
+     "x-hdgli1",
+     "Our coach is strict but fair."
+    ],
+    [
+     "x-1nmq0zx",
+     "We win the match."
+    ],
+    [
+     "x-nqa4dr",
+     "We beat the other team."
+    ],
+    [
+     "x-1fllmbf",
+     "Hi! I'm Ada and this is my best friend, Defne. We are in the same class. Defne is twelve years old."
+    ],
+    [
+     "x-1o6cgvf",
+     "She is tall and slim. She has got long straight black hair and big brown eyes. She wears glasses and she has got a lovely smile."
+    ],
+    [
+     "x-19yt1zf",
+     "Defne is very friendly and helpful. She always helps me with Maths. She is also hard-working, so her grades are great. But she is a bit shy when she meets new people."
+    ],
+    [
+     "x-1el5tcu",
+     "I am shorter than Defne and my hair is curly. I am more talkative than her! We are different, but we are the best friends in the world."
+    ],
+    [
+     "x-1qsz7y1",
+     "Can and Cem are twins. They are thirteen years old and they look like each other a lot. Both of them have got short curly brown hair and green eyes."
+    ],
+    [
+     "x-wun48x",
+     "But Can is a bit taller than Cem, and Cem has got freckles on his nose."
+    ],
+    [
+     "x-1lhgjj2",
+     "Their personalities are very different. Can is outgoing and talkative. He loves parties and he has got lots of friends. Cem is quieter than his brother. He is calm and patient, and he loves reading books."
+    ],
+    [
+     "x-1uirxw5",
+     "Can is messy, but Cem is very tidy. Their mother always says, \"Can is funnier, but Cem is more careful!\""
+    ],
+    [
+     "x-bv0f7u",
+     "Hi, I'm Emre and I'm crazy about sports! I go swimming every day after school because it is healthy and relaxing."
+    ],
+    [
+     "x-p273pi",
+     "I play basketball with my friends on Mondays, Wednesdays and Fridays. On Saturdays, I go cycling with my dad."
+    ],
+    [
+     "x-1f8svpe",
+     "I sometimes play chess with my grandpa, but I don't like it very much. I think it is a bit boring. I never do boxing because I think it is dangerous."
+    ],
+    [
+     "x-17xdlu3",
+     "My sister Zeynep does yoga twice a week and she goes ice skating once a month. She is better at sports than me!"
+    ],
+    [
+     "x-1r302ge",
+     "Elif is a fourteen-year-old athlete from Ankara. She does archery and she is a member of the city team."
+    ],
+    [
+     "x-8o0rok",
+     "She trains five days a week. She usually gets up at six o'clock and goes to the sports centre before school."
+    ],
+    [
+     "x-dzke3e",
+     "Her coach says she is patient, careful and very hard-working. \"Some people think archery is boring,\" Elif says, \"but I love it. It is calm and it teaches me to focus.\""
+    ],
+    [
+     "x-ag2tgw",
+     "Elif has got three medals. Her dream is to compete in the Olympic Games one day, like Mete Gazoz."
+    ]
+   ]
+  }
+ ]
+}

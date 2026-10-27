@@ -1,0 +1,46 @@
+// Çizgi ikonlar; renk currentColor'dan gelir
+
+import { raw } from '../lib/dom.js';
+
+const P = {
+  home: '<path d="M4 11.2 12 4l8 7.2V20h-5.2v-5.6H9.2V20H4z"/>',
+  book: '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/><path d="M8.5 7.5h7"/>',
+  cards: '<rect x="3.5" y="6.5" width="12" height="15" rx="2.5"/><path d="M8.5 6.5V5a2.5 2.5 0 0 1 2.5-2.5h7A2.5 2.5 0 0 1 20.5 5v11a2.5 2.5 0 0 1-2.5 2.5h-2.5"/>',
+  dict: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 21 21"/><path d="M8 10.5h5M10.5 8v5"/>',
+  search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 21 21"/>',
+  chat: '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v9a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4h0A1.5 1.5 0 0 1 4 15.5z"/><path d="M8.5 8.5h7M8.5 12h4.5"/>',
+  exam: '<rect x="4.5" y="4" width="15" height="17.5" rx="2.5"/><path d="M9 2.5h6v3H9z"/><path d="M8 10.5l1.5 1.5 3-3M8 16l1.5 1.5 3-3M14.5 11h2M14.5 16.5h2"/>',
+  redo: '<path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M19.5 3.8v4.6h-4.6"/>',
+  sliders: '<path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2.3"/><circle cx="9" cy="17" r="2.3"/>',
+  speaker: '<path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path class="w1" d="M15.5 9a4 4 0 0 1 0 6"/><path class="w2" d="M18.2 6.5a7.5 7.5 0 0 1 0 11"/>',
+  turtle: '<path d="M5 15.5c0-4 3-7 7-7s7 3 7 7z"/><path d="M19 13.5h1.5a1.5 1.5 0 0 0 0-3H19"/><path d="M7 15.5v2.5M17 15.5v2.5M3.5 15.5h17"/><path d="M9 11l3 2 3-2"/>',
+  star: '<path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z"/>',
+  starFill: '<path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z" fill="currentColor"/>',
+  check: '<path d="M5 12.5l4.6 4.5L19 7.2"/>',
+  x: '<path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/>',
+  arrow: '<path d="M5 12h13.5M13 6l6 6-6 6"/>',
+  back: '<path d="M19 12H5.5M11 6l-6 6 6 6"/>',
+  chevron: '<path d="M9 5l7 7-7 7"/>',
+  lock: '<rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/>',
+  flame: '<path d="M12 21c-3.9 0-6.5-2.6-6.5-6.2 0-3.4 2.4-5.4 3.6-8.3.3 1.9 1.3 3 2.4 3.6.2-2.9 1.6-5.4 4.2-7.1-.4 2.6.4 4.4 1.6 6.2 1 1.5 1.7 3.2 1.7 5.6 0 3.6-3 6.2-7 6.2z"/><path d="M12 21c-1.7 0-3-1.2-3-3 0-1.9 1.6-2.7 2.3-4.4.9 1.2 3.7 2.1 3.7 4.5 0 1.7-1.3 2.9-3 2.9z"/>',
+  bolt: '<path d="M13.5 2.5 5 13.5h6l-1.5 8 8.5-11h-6z"/>',
+  trophy: '<path d="M7.5 4h9v5a4.5 4.5 0 0 1-9 0z"/><path d="M7.5 6H4.5a3 3 0 0 0 3 4M16.5 6h3a3 3 0 0 1-3 4"/><path d="M12 13.5v3.5M8.5 20.5h7M9.5 17h5v3.5h-5z"/>',
+  sparkle: '<path d="M12 3c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7z"/><path d="M19 16c.3 1.6 1 2.3 2.5 2.5-1.5.3-2.2 1-2.5 2.5-.3-1.5-1-2.2-2.5-2.5 1.5-.2 2.2-.9 2.5-2.5z"/>',
+  play: '<path d="M8 5.2v13.6a.8.8 0 0 0 1.2.7l10.6-6.8a.8.8 0 0 0 0-1.4L9.2 4.5A.8.8 0 0 0 8 5.2z" fill="currentColor"/>',
+  pencil: '<path d="M4 20l4.2-1L19.4 7.8a2 2 0 0 0 0-2.8l-.4-.4a2 2 0 0 0-2.8 0L5 15.8z"/><path d="M14.5 6.3l3.2 3.2"/>',
+  bulb: '<path d="M9 17.5h6M10 20.5h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1 2V16h5.2v-.2c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/>',
+  alert: '<path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 17h.01"/>',
+  send: '<path d="M4 12 20 4l-4.5 16-3.8-6.7z"/><path d="M11.7 13.3 20 4"/>',
+  shuffle: '<path d="M3.5 7h3.2c4.3 0 6.3 10 10.6 10h3.2"/><path d="M3.5 17h3.2c1.8 0 3-1.6 4-3.5M13.4 10.4c1-1.9 2.3-3.4 4-3.4h3.1"/><path d="M18 4.2 20.6 7 18 9.8M18 14.2l2.6 2.8-2.6 2.8"/>',
+  list: '<path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.8" cy="6.5" r="1" fill="currentColor"/><circle cx="4.8" cy="12" r="1" fill="currentColor"/><circle cx="4.8" cy="17.5" r="1" fill="currentColor"/>',
+  clock: '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+  read: '<path d="M2.5 6c3-1.5 6.5-1.5 9.5.5v13c-3-2-6.5-2-9.5-.5zM21.5 6c-3-1.5-6.5-1.5-9.5.5v13c3-2 6.5-2 9.5-.5z"/>',
+  target: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/>',
+  note: '<path d="M5 3.5h10l4 4v13H5z"/><path d="M15 3.5v4h4M8.5 12h7M8.5 15.5h7M8.5 8.5h3"/>',
+  user: '<circle cx="12" cy="8.5" r="4"/><path d="M4.5 20.5c.8-4 3.8-6 7.5-6s6.7 2 7.5 6"/>',
+  trash: '<path d="M4.5 6.5h15M9.5 6.5V4h5v2.5M6.5 6.5l1 14h9l1-14"/>',
+  eye: '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/>',
+  menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+};
+
+export const icon = (name, cls = '') => raw(`<svg class="ico ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[name] || ''}</svg>`);

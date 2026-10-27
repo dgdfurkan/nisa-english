@@ -1,0 +1,86 @@
+// Okuma parçaları: her ünitede iki metin ve anlama soruları
+
+export const READINGS = [
+  {
+    id: 'r1-defne',
+    unit: 1,
+    title: 'My Best Friend',
+    tr: 'En Yakın Arkadaşım',
+    pic: '👭',
+    people: [{ kind: 'girl', h: 'tall', build: 'slim', hairLen: 'long', hairType: 'straight', hairColor: 'black', glasses: true }, { kind: 'girl', h: 'short', hairLen: 'shoulder', hairType: 'curly', hairColor: 'brown' }],
+    paras: [
+      "Hi! I'm Ada and this is my best friend, Defne. We are in the same class. Defne is twelve years old.",
+      'She is tall and slim. She has got long straight black hair and big brown eyes. She wears glasses and she has got a lovely smile.',
+      'Defne is very friendly and helpful. She always helps me with Maths. She is also hard-working, so her grades are great. But she is a bit shy when she meets new people.',
+      'I am shorter than Defne and my hair is curly. I am more talkative than her! We are different, but we are the best friends in the world.',
+    ],
+    questions: [
+      { q: 'What does Defne look like?', opts: ['She is short and she has got curly hair.', 'She is tall and slim with long straight hair.', 'She is bald and she wears glasses.', 'She has got short blonde hair.'], a: 1, why: '"She is tall and slim. She has got long straight black hair."' },
+      { q: 'Which is NOT true about Defne?', opts: ['She wears glasses.', 'She is helpful.', 'She is very talkative.', 'She is hard-working.'], a: 2, why: 'Metne göre Defne biraz utangaç. Daha konuşkan olan Ada.' },
+      { q: 'Ada is ______ than Defne.', opts: ['taller', 'shorter', 'quieter', 'older'], a: 1, why: '"I am shorter than Defne."' },
+      { q: 'Why are Defne\'s grades great?', opts: ['Because she is shy.', 'Because she wears glasses.', 'Because she is hard-working.', 'Because she is tall.'], a: 2, why: '"She is also hard-working, so her grades are great."' },
+      { q: 'What is Ada\'s hair like?', opts: ['curly', 'straight', 'long and black', 'blonde'], a: 0, why: '"my hair is curly"' },
+    ],
+  },
+  {
+    id: 'r1-twins',
+    unit: 1,
+    title: 'The Twins',
+    tr: 'İkizler',
+    pic: '👬',
+    people: [{ kind: 'boy', h: 'tall', hairLen: 'short', hairType: 'curly', hairColor: 'brown' }, { kind: 'boy', h: 'mid', hairLen: 'short', hairType: 'curly', hairColor: 'brown', freckles: true }],
+    paras: [
+      'Can and Cem are twins. They are thirteen years old and they look like each other a lot. Both of them have got short curly brown hair and green eyes.',
+      'But Can is a bit taller than Cem, and Cem has got freckles on his nose.',
+      'Their personalities are very different. Can is outgoing and talkative. He loves parties and he has got lots of friends. Cem is quieter than his brother. He is calm and patient, and he loves reading books.',
+      'Can is messy, but Cem is very tidy. Their mother always says, "Can is funnier, but Cem is more careful!"',
+    ],
+    questions: [
+      { q: 'Who is taller?', opts: ['Cem', 'Can', 'They are the same.', 'Their mother'], a: 1, why: '"Can is a bit taller than Cem."' },
+      { q: 'Who has got freckles?', opts: ['Can', 'Cem', 'Both of them', 'Neither of them'], a: 1, why: '"Cem has got freckles on his nose."' },
+      { q: 'Which is TRUE?', opts: ['Can is tidier than Cem.', 'Cem is more talkative than Can.', 'Cem is tidier than Can.', 'Can is quieter than Cem.'], a: 2, why: '"Can is messy, but Cem is very tidy."' },
+      { q: 'What is Can like?', opts: ['He is calm and patient.', 'He is outgoing and talkative.', 'He is shy and quiet.', 'He is tidy and careful.'], a: 1, why: '"Can is outgoing and talkative."' },
+      { q: 'Both of them have got ______.', opts: ['freckles', 'long straight hair', 'short curly brown hair', 'blue eyes'], a: 2, why: '"Both of them have got short curly brown hair and green eyes."' },
+    ],
+  },
+  {
+    id: 'r2-emre',
+    unit: 2,
+    title: "Emre's Sports Week",
+    tr: 'Emre\'nin Spor Haftası',
+    pic: '🏊',
+    paras: [
+      "Hi, I'm Emre and I'm crazy about sports! I go swimming every day after school because it is healthy and relaxing.",
+      'I play basketball with my friends on Mondays, Wednesdays and Fridays. On Saturdays, I go cycling with my dad.',
+      "I sometimes play chess with my grandpa, but I don't like it very much. I think it is a bit boring. I never do boxing because I think it is dangerous.",
+      'My sister Zeynep does yoga twice a week and she goes ice skating once a month. She is better at sports than me!',
+    ],
+    questions: [
+      { q: 'How often does Emre go swimming?', opts: ['Once a week.', 'Every day.', 'Twice a month.', 'Never.'], a: 1, why: '"I go swimming every day after school."' },
+      { q: 'Which sport does Emre play three times a week?', opts: ['chess', 'tennis', 'basketball', 'volleyball'], a: 2, why: 'Pazartesi, çarşamba ve cuma: basketball.' },
+      { q: "Why doesn't Emre do boxing?", opts: ['He thinks it is boring.', 'He thinks it is dangerous.', 'It is expensive.', 'His dad does it.'], a: 1, why: '"I never do boxing because I think it is dangerous."' },
+      { q: 'What does Emre think about chess?', opts: ['It is exciting.', 'It is a bit boring.', 'It is dangerous.', 'It is his favourite sport.'], a: 1, why: '"I think it is a bit boring."' },
+      { q: 'Which is TRUE?', opts: ['Zeynep does yoga twice a week.', 'Zeynep goes ice skating every day.', 'Emre goes cycling with his grandpa.', 'Emre is better at sports than Zeynep.'], a: 0, why: '"My sister Zeynep does yoga twice a week."' },
+    ],
+  },
+  {
+    id: 'r2-elif',
+    unit: 2,
+    title: 'A Young Archer',
+    tr: 'Genç Bir Okçu',
+    pic: '🏹',
+    paras: [
+      'Elif is a fourteen-year-old athlete from Ankara. She does archery and she is a member of the city team.',
+      'She trains five days a week. She usually gets up at six o\'clock and goes to the sports centre before school.',
+      'Her coach says she is patient, careful and very hard-working. "Some people think archery is boring," Elif says, "but I love it. It is calm and it teaches me to focus."',
+      'Elif has got three medals. Her dream is to compete in the Olympic Games one day, like Mete Gazoz.',
+    ],
+    questions: [
+      { q: 'Which sport does Elif do?', opts: ['fencing', 'archery', 'athletics', 'gymnastics'], a: 1, why: '"She does archery."' },
+      { q: 'How often does she train?', opts: ['Every day.', 'Five days a week.', 'Twice a week.', 'Once a month.'], a: 1, why: '"She trains five days a week."' },
+      { q: 'What is Elif like, according to her coach?', opts: ['patient, careful and hard-working', 'lazy and careless', 'talkative and funny', 'shy and moody'], a: 0, why: '"Her coach says she is patient, careful and very hard-working."' },
+      { q: 'Which is NOT true?', opts: ['Elif is from Ankara.', 'She usually gets up at six.', 'She has got five medals.', 'She loves archery.'], a: 2, why: 'Elif\'in üç madalyası var, beş değil.' },
+      { q: 'What is her dream?', opts: ['To be a coach.', 'To compete in the Olympic Games.', 'To play football.', 'To live in Ankara.'], a: 1, why: '"Her dream is to compete in the Olympic Games one day."' },
+    ],
+  },
+];
