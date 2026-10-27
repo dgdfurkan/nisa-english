@@ -3,14 +3,15 @@
 import { html, raw, toHTML } from '../lib/dom.js';
 import { store, isLearned } from '../lib/store.js';
 import { icon } from '../ui/icons.js';
-import { ring, starsHTML } from '../ui/kit.js';
+import { starsHTML } from '../ui/kit.js';
 import { segHTML, bindSeg } from '../ui/controls.js';
 import { unitByN, readingsOf } from '../data/units.js';
 import { CATS } from '../data/words.js';
 import { setsOf } from '../quiz/sets.js';
 import { unitProgress } from './home.js';
+import { SHEETS } from '../ws/sheets.js';
 
-const TABS = [['konular', 'Konular'], ['kelimeler', 'Kelimeler'], ['okuma', 'Okuma'], ['alistirma', 'Alıştırmalar'], ['sinav', 'Sınav'], ['ozet', 'Özet']];
+const TABS = [['konular', 'Konular'], ['kelimeler', 'Kelimeler'], ['okuma', 'Okuma'], ['alistirma', 'Alıştırmalar'], ['kagit', 'Kağıtlar'], ['sinav', 'Sınav'], ['ozet', 'Özet']];
 
 function lessonsTab(u) {
   const done = store.get('lessons');
@@ -99,7 +100,17 @@ function summaryTab(u) {
   </div>`;
 }
 
-const RENDER = { konular: lessonsTab, kelimeler: wordsTab, okuma: readingTab, alistirma: practiceTab, sinav: examTab, ozet: summaryTab };
+function sheetsTab(u) {
+  const res = store.get('sheets');
+  return html`<div class="ws-cards in-unit">${SHEETS.filter((s) => s.unit === u.n).map((s, i) => html`<a class="ws-card rise" style="--i:${i}" href="#/calisma/${s.id}">
+    <span class="wc-sheet" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="wc-e">${s.e}</span><b>${s.title}</b><span class="wc-tr">${s.tr}</span>
+    <span class="wc-foot">${res[s.id] && res[s.id].best != null ? html`<span class="tag ${res[s.id].best >= 85 ? 'good' : 'gold'}">en iyi %${res[s.id].best}</span>` : html`<span class="tag gray">${icon('note')}Yazdırılabilir</span>`}</span>
+  </a>`)}</div>
+  <p class="t-small center">Her kağıtta resimli, farklı türde sorular var. "Yeni kağıt" ile sınırsız soru!</p>`;
+}
+
+const RENDER = { konular: lessonsTab, kelimeler: wordsTab, okuma: readingTab, alistirma: practiceTab, kagit: sheetsTab, sinav: examTab, ozet: summaryTab };
 
 export function mountUnit(view, n, tab) {
   const u = unitByN(n);
@@ -117,9 +128,10 @@ export function mountUnit(view, n, tab) {
             <span>${icon('book')}${p.done}/${p.lessons} konu</span>
             <span>${icon('cards')}${p.learned}/${p.words} kelime</span>
             <span>${icon('starFill')}${p.stars}/${p.maxStars} yıldız</span>
+            <span>${icon('target')}%${Math.round(p.pct * 100)} tamam</span>
           </div>
         </div>
-        <div class="uh-ring">${ring(p.pct, { size: 112, stroke: 6 })}<span class="uh-pic">${u.pic}</span></div>
+        <div class="uh-art" aria-hidden="true">${u.art.map((e, k) => html`<span class="ua a${k}">${e}</span>`)}</div>
       </section>
       <details class="card goals" ${store.get('lessons')[u.lessons[0].id] ? '' : raw('open')}>
         <summary><span>${icon('target')}<b>Bu ünitede neler öğreneceksin?</b></span>${icon('chevron')}</summary>

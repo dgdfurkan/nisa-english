@@ -36,6 +36,7 @@ function load() {
     steps: obj(saved.steps),
     sets: obj(saved.sets),
     readings: obj(saved.readings),
+    sheets: obj(saved.sheets),
     exams: arr(saved.exams).slice(-40),
     mistakes: obj(saved.mistakes),
     fav: arr(saved.fav),

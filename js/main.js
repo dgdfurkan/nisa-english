@@ -17,6 +17,7 @@ import { openSettings } from './screens/settings.js';
 import { openBadges } from './screens/badges.js';
 import { openAsk, closeAsk, askOpen } from './screens/ask.js';
 import { mistakeCount } from './quiz/mistakes.js';
+import { watchEmoji } from './ui/emo.js';
 
 const view = document.getElementById('view');
 const side = document.getElementById('side');
@@ -54,6 +55,7 @@ const ROUTES = [
   [/^sozluk(?:\/(.*))?$/, () => import('./screens/dict.js').then((m) => ({ mount: m.mountDict, unit: 0, nav: 'dict' }))],
   [/^sor$/, () => import('./screens/ask.js').then((m) => ({ mount: m.mountAskPage, unit: 0, nav: 'ask' }))],
   [/^yanlislar$/, () => import('./screens/mistakes.js').then((m) => ({ mount: m.mountMistakes, unit: 0, nav: 'mistakes' }))],
+  [/^calisma(?:\/([a-z0-9-]+))?$/, (id) => import('./screens/worksheet.js').then((m) => ({ mount: m.mountWorksheets, unit: id && id.startsWith('u2') ? 2 : id && id.startsWith('u1') ? 1 : 0, nav: 'sheets' }))],
 ];
 
 function parseHash() {
@@ -162,6 +164,7 @@ const NAV = [
   ['u1', '#/unite/1', 'u1', 'Ünite 1 · Görünüş'],
   ['u2', '#/unite/2', 'u2', 'Ünite 2 · Sporlar'],
   ['sep', 'Çalışma Araçları'],
+  ['sheets', '#/calisma', 'note', 'Çalışma Kağıtları'],
   ['dict', '#/sozluk', 'dict', 'Sözlük'],
   ['ask', '#/sor', 'chat', "Muffin'e Sor"],
   ['exam', '#/sinav', 'exam', 'Deneme Sınavı'],
@@ -281,6 +284,7 @@ store.subscribe((key) => {
 });
 
 function start() {
+  watchEmoji(document.body);
   initConfetti(document.getElementById('confetti'));
   renderDoodles();
   renderSide();

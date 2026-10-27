@@ -7,7 +7,7 @@ export const U2_LESSONS = [
     title: 'PLAY, DO ya da GO?',
     en: 'play football, do karate, go swimming',
     pic: '🏅',
-    minutes: 9,
+    minutes: 12,
     steps: [
       {
         title: 'Sporlarla üç fiil',
@@ -65,6 +65,14 @@ export const U2_LESSONS = [
         ],
       },
       {
+        title: 'Oyun: Hangi fiil?',
+        blocks: [
+          { t: 'p', text: 'Kuralları öğrendin, şimdi hızlanalım! Gelen sporun fiilini seç: **PLAY**, **DO** ya da **GO**. Yanlış yaparsan spor doğru sütuna kırmızı çerçeveyle düşer, oradan da öğrenirsin.' },
+          { t: 'viz', kind: 'pdg' },
+          { t: 'tip', text: 'Kısa yol: Spor adı **-ing** ile bitiyorsa çoğunlukla **go** (go swimming). Top varsa **play**. İkisi de değilse **do** (do karate, do yoga).' },
+        ],
+      },
+      {
         title: 'Hızlı kontrol',
         blocks: [
           { t: 'check', q: 'We ______ camping every summer.', opts: ['play', 'do', 'go', 'make'], a: 2, why: 'camping -ing ile biter ve bir yere gidilir: go camping.' },
@@ -87,7 +95,7 @@ export const U2_LESSONS = [
     title: 'Rutinler: Simple Present',
     en: 'She plays tennis on Mondays.',
     pic: '🔁',
-    minutes: 9,
+    minutes: 11,
     steps: [
       {
         title: 'Alışkanlıkları anlatmak',
@@ -101,6 +109,9 @@ export const U2_LESSONS = [
             rows: [['I / You / We / They', 'play'], ['He / She / It', 'plays']],
           },
           { t: 'warn', text: 'He / She / It ile fiile ==-s== eklemeyi unutma! Sınavda en çok kaybedilen puan budur.' },
+          { t: 'h', text: 'Rutin Makinesi' },
+          { t: 'p', text: 'Aşağıda bir günün akışı var. **I** ile **She** arasında geçiş yap: He / She / It gelince fiillerin sonuna ne eklendiğini izle. Sonra **Olumsuz** ve **Soru** düğmelerine bas.' },
+          { t: 'viz', kind: 'routine' },
         ],
       },
       {
@@ -190,7 +201,7 @@ export const U2_LESSONS = [
     title: 'Ne Sıklıkla? Sıklık Zarfları',
     en: 'How often do you play tennis?',
     pic: '📅',
-    minutes: 9,
+    minutes: 11,
     steps: [
       {
         title: 'Sıklık ölçeği',
@@ -198,12 +209,14 @@ export const U2_LESSONS = [
           { t: 'p', text: 'Bir şeyi **ne sıklıkla** yaptığımızı anlatan kelimelere ==adverbs of frequency== (sıklık zarfları) denir.' },
           { t: 'scale' },
           { t: 'tip', text: '*rarely* ve *seldom* aynı anlamdadır: nadiren. *never* = asla, hiçbir zaman.' },
+          { t: 'viz', kind: 'week' },
         ],
       },
       {
         title: 'Cümledeki yeri',
         blocks: [
           { t: 'p', text: 'Sıklık zarfları **asıl fiilin önüne** gelir.' },
+          { t: 'viz', kind: 'advpos' },
           { t: 'rule', parts: ['I', 'always', 'go swimming'] },
           { t: 'ex', en: 'I always go swimming on Sundays.', tr: 'Pazar günleri her zaman yüzmeye giderim.' },
           { t: 'ex', en: 'She usually plays tennis after school.', tr: 'Genellikle okuldan sonra tenis oynar.' },
@@ -242,6 +255,7 @@ export const U2_LESSONS = [
           { t: 'ex', en: 'How often do you play basketball? Twice a week.', tr: 'Ne sıklıkla basketbol oynarsın? Haftada iki kez.' },
           { t: 'ex', en: 'She goes horse riding once a month.', tr: 'Ayda bir kez ata binmeye gider.' },
           { t: 'tip', text: '1 = ==once==, 2 = ==twice==, 3 ve sonrası = ==three times, four times...==' },
+          { t: 'viz', kind: 'week', mode: 'times' },
         ],
       },
       {
@@ -285,7 +299,7 @@ export const U2_LESSONS = [
     title: 'Sevdiklerimiz ve Fikirlerimiz',
     en: 'I love swimming!',
     pic: '❤️',
-    minutes: 9,
+    minutes: 10,
     steps: [
       {
         title: 'Ne kadar seviyorsun?',
@@ -303,6 +317,8 @@ export const U2_LESSONS = [
               ['🙅', "can't stand", 'hiç dayanamamak'],
             ],
           },
+          { t: 'viz', kind: 'love' },
+          { t: 'ex', en: 'I love swimming, but I can\'t stand running.', tr: 'Yüzmeye bayılırım ama koşmaya katlanamam.' },
         ],
       },
       {
@@ -380,7 +396,7 @@ export const U2_LESSONS = [
     title: 'Malzemeler, Yerler, Kişiler',
     en: 'racket, court, referee',
     pic: '🎾',
-    minutes: 7,
+    minutes: 10,
     steps: [
       {
         title: 'Hangi sporda ne kullanılır, nerede yapılır?',
@@ -403,6 +419,7 @@ export const U2_LESSONS = [
             ],
           },
           { t: 'tip', text: 'tennis, basketball ve volleyball ==court==\'ta, football ==pitch==\'te oynanır.' },
+          { t: 'viz', kind: 'places' },
         ],
       },
       {
@@ -433,6 +450,7 @@ export const U2_LESSONS = [
           { t: 'ex', en: 'We beat the other team.', tr: 'Diğer takımı yeneriz.' },
           { t: 'right', ok: 'Our team wins the cup.', bad: 'Our team beats the cup.', why: 'Kupa kazanılır (win), yenilmez.' },
           { t: 'tip', text: 'Sporcu kelimeleri bazen fiilden **-er** ile yapılır: run → ==runner==, swim → ==swimmer== (m çiftlenir), cycle → ==cyclist==, ski → ==skier==.' },
+          { t: 'viz', kind: 'winbeat' },
         ],
       },
       {

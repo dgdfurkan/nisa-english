@@ -2,7 +2,7 @@
 
 import { html, raw, toHTML, esc } from '../lib/dom.js';
 import { store, isFav, toggleFav, wordBox } from '../lib/store.js';
-import { WORDS, WORD, POS, catOf } from '../data/words.js';
+import { WORDS, WORD, POS, catOf, slug } from '../data/words.js';
 import { lookupToken, findWord } from '../lib/lookup.js';
 import { openSheet } from './overlay.js';
 import { icon } from './icons.js';
@@ -116,7 +116,9 @@ function showPop(target, hit) {
     ? html`<div class="wpop-head"><b>${w.en}</b>${sayBtn(`w-${w.id}`)}<span class="tag">${POS[w.pos] || ''}</span></div>
       <div class="wpop-tr">${w.tr}</div>${formNote ? html`<div class="t-small">${formNote}</div>` : ''}
       <div class="wpop-foot"><button class="btn btn--small" data-open-word="${w.id}">${icon('book')}Ayrıntılar</button></div>`
-    : html`<div class="wpop-head"><b>${hit.base}</b></div><div class="wpop-tr">${hit.tr}</div>${formNote ? html`<div class="t-small">${formNote}</div>` : ''}`);
+    : hit.name
+      ? html`<div class="wpop-head"><b>${hit.form}</b></div><div class="wpop-tr">Özel isim</div><div class="t-small">Kişi ya da yer adı. İngilizcede özel isimler büyük harfle başlar.</div>`
+      : html`<div class="wpop-head"><b>${hit.base}</b>${sayBtn(`g-${slug(hit.base)}`)}</div><div class="wpop-tr">${hit.tr}</div>${formNote ? html`<div class="t-small">${formNote}</div>` : ''}`);
   document.body.append(node);
   const r = target.getBoundingClientRect();
   const pw = node.offsetWidth;
@@ -156,7 +158,9 @@ document.addEventListener('click', (e) => {
     const first = String(token).split(/\s+/)[0];
     const h2 = first !== token ? lookupToken(first) : null;
     if (!h2) {
-      closePop();
+      // Büyük harfle başlayan, sözlükte olmayan kelime: kişi ya da yer adı
+      if (/^[A-ZÇĞİÖŞÜ][a-zçğıöşü]+$/.test(token)) showPop(t, { name: true, form: token });
+      else closePop();
       return;
     }
     showPop(t, h2);

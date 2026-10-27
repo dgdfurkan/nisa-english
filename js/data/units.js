@@ -5,6 +5,8 @@ import { U2_LESSONS } from './u2-lessons.js';
 import { U1_EXAM } from './u1-exam.js';
 import { U2_EXAM } from './u2-exam.js';
 import { READINGS } from './readings.js';
+import { vizLines } from './viz-data.js';
+import { chatVoiceLines } from './chat-lines.js';
 
 // Kitaptaki içindekiler sayfasının renkleri
 export const UNITS = [
@@ -17,6 +19,7 @@ export const UNITS = [
     deep: '#6b52b8',
     soft: '#ece6fb',
     pic: '🪞',
+    art: ['🪞', '👓', '💇‍♀️', '😊', '🧑‍🦱'],
     goals: [
       'Birinin dış görünüşünü tarif etmek',
       'Birinin kişiliğini anlatmak',
@@ -36,6 +39,7 @@ export const UNITS = [
     deep: '#246f5e',
     soft: '#dcf1ea',
     pic: '🏅',
+    art: ['🏅', '⚽', '🎾', '🏊', '🥋'],
     goals: [
       'Sporları play, do, go ile doğru kullanmak',
       'Rutinleri anlatmak (Simple Present)',
@@ -69,7 +73,7 @@ export function lineId(text) {
   return `x-${h.toString(36)}`;
 }
 
-// Derslerdeki örnekler, diyaloglar ve okuma paragrafları seslendirilir
+// Derslerdeki örnekler, diyaloglar, okuma paragrafları, görsel bloklar ve sohbet cümleleri seslendirilir
 export function voiceLines() {
   const seen = new Map();
   const add = (text) => {
@@ -85,5 +89,8 @@ export function voiceLines() {
     }
   }
   for (const r of READINGS) r.paras.forEach(add);
+  // Görsel anlatım blokları ve Muffin'in sohbet cümleleri
+  vizLines().forEach(add);
+  chatVoiceLines().forEach(add);
   return [...seen.entries()];
 }

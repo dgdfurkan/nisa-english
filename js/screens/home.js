@@ -64,19 +64,22 @@ export function mountHome(view) {
 
   view.innerHTML = toHTML(html`
     <div class="page home">
-      <section class="hero">
-        <div class="hero-txt">
-          <div class="eyebrow rise">${greeting()}</div>
+      <section class="hero2">
+        <div class="h2-bg" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><i class="grain"></i></div>
+        <div class="h2-txt">
+          <div class="h2-hello rise">${greeting()}</div>
           <h1 class="t-hero rise" style="--i:1">Hi, ${underline(name)}!</h1>
           <p class="t-lead rise" style="--i:2">${motto}</p>
-          <div class="hero-stats rise" style="--i:3">
-            <div class="hs">${ring(Math.min(1, today / goal), { size: 58, label: html`${icon('bolt')}` })}<div><b>${today} / ${goal} XP</b><span>Bugünkü hedef</span></div></div>
+          <div class="h2-stats rise" style="--i:3">
+            <div class="hs">${ring(Math.min(1, today / goal), { size: 52, label: html`${icon('bolt')}` })}<div><b>${today} / ${goal} XP</b><span>Bugünkü hedef</span></div></div>
             <div class="hs">${raw(`<span class="hs-ico flame ${s ? '' : 'cold'}">${toHTML(icon('flame'))}</span>`)}<div><b>${s} gün</b><span>Çalışma serisi</span></div></div>
             <div class="hs">${raw(`<span class="hs-ico lvl">${lv.n}</span>`)}<div><b>${lv.name}</b><span>Seviye ${lv.n} · ${store.get('xp')} XP</span></div></div>
           </div>
         </div>
-        <div class="hero-art rise" style="--i:2">
-          <div class="hero-muffin bob">${raw(muffin({ mood: 'happy' }))}</div>
+        <div class="h2-art rise" style="--i:2" aria-hidden="true">
+          <span class="fl f1">📚</span><span class="fl f2">✏️</span><span class="fl f3">⭐</span><span class="fl f4">🏆</span><span class="fl f5">🎧</span>
+          <div class="h2-glow"></div>
+          <div class="h2-muffin bob">${raw(muffin({ mood: 'happy' }))}</div>
           <div class="speech hand">Takılırsan bana sor!</div>
         </div>
       </section>
@@ -93,29 +96,35 @@ export function mountHome(view) {
 
       <section class="contents">
         <div class="sec-head"><h2 class="t-big">İçindekiler</h2><span class="t-small">Kitabındaki sırayla</span></div>
-        <div class="units">
-          ${UNITS.map((u, i) => {
-            if (u.locked) {
-              return html`<div class="unit-bar locked rise" style="--i:${i + 5};--uc:${u.color};--us:${u.soft}">
-                <span class="ub-n">UNIT ${u.n}</span><span class="ub-t">${u.title.toUpperCase()}</span><span class="ub-tag">${icon('lock')}Yakında</span><span class="ub-p">${u.pages}</span>
-              </div>`;
-            }
+        <div class="ucards">
+          ${UNITS.filter((u) => !u.locked).map((u, i) => {
             const p = unitProgress(u.n);
-            return html`<a class="unit-bar rise" style="--i:${i + 5};--uc:${u.color};--ud:${u.deep};--us:${u.soft}" href="#/unite/${u.n}">
-              <span class="ub-n">UNIT ${u.n}</span>
-              <span class="ub-t">${u.title.toUpperCase()}<small>${u.tr}</small></span>
-              <span class="ub-prog"><span class="ub-bar"><i style="width:${Math.round(p.pct * 100)}%"></i></span><span>%${Math.round(p.pct * 100)}</span></span>
-              <span class="ub-p">${u.pages}</span>
+            return html`<a class="ucard rise" style="--i:${i + 5};--uc:${u.color};--ud:${u.deep};--us:${u.soft}" href="#/unite/${u.n}">
+              <span class="uc-art" aria-hidden="true">${u.art.map((e, k) => html`<span class="ua a${k}">${e}</span>`)}</span>
+              <span class="uc-body">
+                <span class="uc-n">UNIT ${u.n} · s. ${u.pages}</span>
+                <b class="uc-t">${u.title}</b>
+                <span class="uc-tr">${u.tr}</span>
+                <span class="uc-meta"><span>${icon('book')}${p.lessons} konu</span><span>${icon('cards')}${p.words} kelime</span></span>
+                <span class="uc-prog"><span class="uc-bar"><i style="width:${Math.max(4, Math.round(p.pct * 100))}%"></i></span><b>%${Math.round(p.pct * 100)}</b></span>
+              </span>
+              <span class="uc-go">${icon('arrow')}</span>
             </a>`;
           })}
+        </div>
+        <div class="ulocked">
+          ${UNITS.filter((u) => u.locked).map((u, i) => html`<div class="ulock rise" style="--i:${i + 7};--uc:${u.color};--us:${u.soft}">
+            <span class="ul-pic">${u.pic}</span><span class="ul-txt"><b>Unit ${u.n}</b><span>${u.title}</span></span><span class="ul-tag">${icon('lock')}Yakında</span>
+          </div>`)}
         </div>
       </section>
 
       <section class="tools">
-        <a class="tool card rise" style="--i:10" href="#/sozluk"><span class="tool-ico t1">${icon('dict')}</span><b>Sözlük</b><span>${WORDS.length} kelime, sesli</span></a>
-        <a class="tool card rise" style="--i:11" href="#/sor"><span class="tool-ico t2">${icon('chat')}</span><b>Muffin'e Sor</b><span>Takıldığın her şey</span></a>
-        <a class="tool card rise" style="--i:12" href="#/sinav"><span class="tool-ico t3">${icon('exam')}</span><b>Deneme Sınavı</b><span>Okul yazılısı gibi</span></a>
-        <a class="tool card rise" style="--i:13" href="#/yanlislar"><span class="tool-ico t4">${icon('redo')}</span><b>Yanlışlarım</b><span>${mc ? `${mc} soru seni bekliyor` : 'Şu an tertemiz'}</span></a>
+        <a class="tool card rise" style="--i:10" href="#/calisma"><span class="tool-emo">📝</span><b>Çalışma Kağıtları</b><span>Resimli, yazdırılabilir</span></a>
+        <a class="tool card rise" style="--i:11" href="#/sozluk"><span class="tool-emo">📖</span><b>Sözlük</b><span>${WORDS.length} kelime, sesli</span></a>
+        <a class="tool card rise" style="--i:12" href="#/sor"><span class="tool-emo tool-muffin">${raw(muffin({ mood: 'wink' }))}</span><b>Muffin'e Sor</b><span>Sohbet et, soru sor</span></a>
+        <a class="tool card rise" style="--i:13" href="#/sinav"><span class="tool-emo">🎯</span><b>Deneme Sınavı</b><span>Okul yazılısı gibi</span></a>
+        <a class="tool card rise" style="--i:14" href="#/yanlislar"><span class="tool-emo">🩹</span><b>Yanlışlarım</b><span>${mc ? `${mc} soru seni bekliyor` : 'Şu an tertemiz'}</span></a>
       </section>
 
       <section class="duo">

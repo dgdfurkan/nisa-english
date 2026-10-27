@@ -4,6 +4,7 @@
 const INK = '#22264b';
 const HAIR = { black: '#2c2633', brown: '#7a4a26', blonde: '#f3c65a', red: '#d4572b', grey: '#c3c3cc' };
 const SKIN = ['#f7d6b8', '#eec19b', '#d9a47d', '#b98057'];
+const EYE = { blue: '#5aa5e8', green: '#4caf6e', brown: '#8a5a2b', grey: '#9aa3b5' };
 const SHIRT = { girl: '#ff8fb1', boy: '#5aa5e8', woman: '#9d86d6', man: '#3f9a85', grandma: '#e8b923', grandpa: '#9b836c' };
 const HEIGHT = { tall: 1, mid: 0.89, short: 0.76 };
 const WIDTH = { slim: 27, mid: 34, plump: 46, strong: 44 };
@@ -110,13 +111,27 @@ function hairFront(p, c) {
 function face(p) {
   let out = '';
   const old = isOld(p.kind);
-  // gözler
-  out += `<circle cx="41" cy="63" r="2.7" fill="${INK}"/><circle cx="59" cy="63" r="2.7" fill="${INK}"/>`;
-  out += `<circle cx="42" cy="62" r=".9" fill="#fff"/><circle cx="60" cy="62" r=".9" fill="#fff"/>`;
+  // gözler (renkli göz ve yüz ifadesi isteğe bağlı)
+  const mood = p.mood || '';
+  if (mood === 'sleepy') {
+    out += `<path d="M37.5 63.5 q3.5 2.4 7 0 M55.5 63.5 q3.5 2.4 7 0" fill="none" ${st(1.8)}/>`;
+  } else if (mood === 'big') {
+    out += `<path d="M37.5 64 q3.5 -4 7 0 M55.5 64 q3.5 -4 7 0" fill="none" ${st(2)}/>`;
+  } else if (EYE[p.eyes]) {
+    out += `<circle cx="41" cy="63" r="3.4" fill="${EYE[p.eyes]}" ${st(1.2)}/><circle cx="59" cy="63" r="3.4" fill="${EYE[p.eyes]}" ${st(1.2)}/>`;
+    out += `<circle cx="41" cy="63" r="1.5" fill="${INK}"/><circle cx="59" cy="63" r="1.5" fill="${INK}"/><circle cx="42.1" cy="61.9" r=".9" fill="#fff"/><circle cx="60.1" cy="61.9" r=".9" fill="#fff"/>`;
+  } else {
+    const dy = mood === 'shy' ? 1.6 : 0;
+    out += `<circle cx="41" cy="${63 + dy}" r="2.7" fill="${INK}"/><circle cx="59" cy="${63 + dy}" r="2.7" fill="${INK}"/>`;
+    out += `<circle cx="42" cy="${62 + dy}" r=".9" fill="#fff"/><circle cx="60" cy="${62 + dy}" r=".9" fill="#fff"/>`;
+  }
+  if (mood === 'angry') out += `<path d="M36 56.5 l8 3 M64 56.5 l-8 3" ${st(2)} fill="none"/>`;
+  if (mood === 'sad') out += `<path d="M36 59 l7 -2.5 M64 59 l-7 -2.5" ${st(1.8)} fill="none"/>`;
   // burun
   out += `<path d="M50 66 q 2.4 3.4 -.6 4.6" fill="none" ${st(1.6)}/>`;
-  // yanaklar
-  out += `<ellipse cx="34" cy="71" rx="4.2" ry="2.4" fill="#ff8fa3" opacity=".45"/><ellipse cx="66" cy="71" rx="4.2" ry="2.4" fill="#ff8fa3" opacity=".45"/>`;
+  // yanaklar (utangaçken kızarır)
+  const blush = mood === 'shy' ? '.9' : '.45';
+  out += `<ellipse cx="34" cy="71" rx="4.2" ry="2.4" fill="#ff8fa3" opacity="${blush}"/><ellipse cx="66" cy="71" rx="4.2" ry="2.4" fill="#ff8fa3" opacity="${blush}"/>`;
   if (p.freckles) {
     out += [[34, 68], [37, 70], [33, 72], [63, 68], [66, 70], [67, 72], [36, 66.5], [64, 66.5]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r=".95" fill="#a0522d"/>`).join('');
   }
@@ -127,6 +142,16 @@ function face(p) {
   // ağız
   if (p.braces) {
     out += `<path d="M43 73.5 q 7 7.5 14 0 z" fill="#fff" ${st(1.8)}/><path d="M44.5 75 h11" stroke="#8b95a8" stroke-width="1.6"/><path d="M47 74.3v2M50 74.3v2.6M53 74.3v2" stroke="#8b95a8" stroke-width="1.2"/>`;
+  } else if (mood === 'big') {
+    out += `<path d="M43 73 q 7 9 14 0 z" fill="#fff" ${st(1.8)}/><path d="M46 76.5 q 4 2.6 8 0" fill="#ff8fa3"/>`;
+  } else if (mood === 'angry' || mood === 'sad') {
+    out += `<path d="M45 77 q 5 -4 10 0" fill="none" ${st(2)}/>`;
+  } else if (mood === 'wow') {
+    out += `<ellipse cx="50" cy="75.5" rx="2.6" ry="3.2" fill="${INK}"/>`;
+  } else if (mood === 'shy') {
+    out += `<path d="M47 75 q 3 2 6 0" fill="none" ${st(1.8)}/>`;
+  } else if (mood === 'sleepy') {
+    out += `<ellipse cx="50" cy="75.5" rx="2" ry="1.6" fill="none" ${st(1.6)}/>`;
   } else {
     out += `<path d="M44.5 74 q 5.5 5 11 0" fill="none" ${st(2)}/>`;
   }
@@ -200,7 +225,8 @@ export function personG(raw) {
   const p = fill(raw);
   const skin = skinOf(p);
   const c = HAIR[p.hairColor] || HAIR.brown;
-  const s = HEIGHT[p.h] || HEIGHT.mid;
+  // Boy: short / mid / tall ya da doğrudan oran (0.8 gibi)
+  const s = typeof p.h === 'number' ? p.h : HEIGHT[p.h] || HEIGHT.mid;
   const ears = `<circle cx="25.5" cy="65" r="4.6" fill="${skin}" ${st(1.8)}/><circle cx="74.5" cy="65" r="4.6" fill="${skin}" ${st(1.8)}/>`;
   const inner = [
     hairBack(p, c),

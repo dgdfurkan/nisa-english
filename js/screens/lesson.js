@@ -103,6 +103,7 @@ export function mountLesson(view, id) {
         </div>
         <div class="row">
           ${setId ? html`<a class="btn btn--primary" href="#/alistirma/${setId}">${icon('target')}Alıştırmaya geç</a>` : ''}
+          <a class="btn" href="#/calisma/${lesson.id}">${icon('note')}Çalışma kağıdı</a>
           ${nextLesson ? html`<a class="btn" href="#/ders/${nextLesson.id}">Sonraki konu: ${nextLesson.title}${icon('arrow')}</a>` : html`<a class="btn" href="#/unite/${lesson.unit}/sinav">${icon('exam')}Deneme sınavı</a>`}
           <a class="btn btn--ghost" href="#/unite/${lesson.unit}">Üniteye dön</a>
         </div>

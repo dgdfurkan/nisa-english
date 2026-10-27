@@ -92,7 +92,29 @@ function faqMatch(f) {
   return bestScore >= 2 ? best : null;
 }
 
-const faqAnswer = (item, extra = {}) => ({ title: item.title, blocks: item.blocks, lesson: item.lesson, ...extra });
+const faqAnswer = (item, extra = {}) => ({ title: item.title, blocks: item.blocks, lesson: item.lesson, faqId: item.id, ...extra });
+
+// Bir konudaki örnek cümleler (ders adımlarından)
+function lessonExamples(lessonId, n = 3) {
+  const l = LESSONS.find((x) => x.id === lessonId);
+  if (!l) return [];
+  return shuffle(l.steps.flatMap((s) => s.blocks.filter((b) => b.t === 'ex'))).slice(0, n);
+}
+
+// "Anlamadım" dendiğinde konunun en sade hali: kural, ipucu ve iki örnek
+export function simplifyFaq(id) {
+  const f = FAQ_BY_ID.get(id);
+  if (!f) return null;
+  const core = f.blocks.filter((b) => ['rule', 'tip', 'right', 'p'].includes(b.t)).slice(0, 2);
+  return { title: `${f.title}: daha basit`, text: 'Hiç sorun değil, adım adım gidelim. Önce şu kurala bak, sonra örnekleri sesli dinle:', blocks: [...core, ...lessonExamples(f.lesson, 2)], lesson: f.lesson, faqId: f.id, mood: 'happy', chips: ['Bir örnek daha', 'Beni test et'] };
+}
+
+export function faqExamples(id) {
+  const f = FAQ_BY_ID.get(id);
+  const ex = f ? lessonExamples(f.lesson, 3) : [];
+  if (!ex.length) return null;
+  return { text: `**${f.title}** için birkaç örnek daha:`, examples: ex, lesson: f.lesson, faqId: f.id, mood: 'happy', chips: ['Bir örnek daha', 'Beni test et'] };
+}
 export const faqById = (id) => (FAQ_BY_ID.get(id) ? faqAnswer(FAQ_BY_ID.get(id), { chips: suggestions() }) : null);
 
 // Bir kelimeyi içeren ders örneklerini bulur

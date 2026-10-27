@@ -12,6 +12,7 @@ import { fmt, sayBtn, tableHTML } from './kit.js';
 import { personSVG } from './person.js';
 import { mountQuestion } from '../quiz/engine.js';
 import { mountBuilder } from './builder.js';
+import { mountViz } from './viz.js';
 import { openWord } from './word.js';
 
 const SCALE = [['always', 100], ['usually', 90], ['often', 70], ['sometimes', 50], ['rarely / seldom', 10], ['never', 0]];
@@ -50,6 +51,12 @@ function block(b, k) {
       return html`<div class="b-scale">${SCALE.map(([w, p], i) => html`<div class="sc-row" style="--p:${p / 100};--i:${i}"><span class="sc-w">${w}</span><span class="sc-bar"><i></i></span><span class="sc-p">%${p}</span></div>`)}</div>`;
     case 'builder':
       return html`<div class="b-builder" data-builder="${b.kind}"></div>`;
+    case 'viz':
+      return html`<div class="b-viz" data-viz="${k}"></div>`;
+    case 'h':
+      return html`<h3 class="b-h">${fmt(b.text)}</h3>`;
+    case 'compare':
+      return html`<div class="b-compare">${b.cols.map((c) => html`<div class="cmp-col ${c.tone || ''}"><div class="cmp-head">${c.e ? html`<span class="cmp-e">${c.e}</span>` : ''}<b>${c.title}</b>${c.sub ? html`<span>${c.sub}</span>` : ''}</div><ul>${c.items.map((it) => html`<li>${fmt(it)}</li>`)}</ul></div>`)}</div>`;
     default:
       return '';
   }
@@ -81,6 +88,7 @@ export function bindBlocks(root, blocks, { onCheck } = {}) {
     }));
   });
   root.querySelectorAll('[data-builder]').forEach((node) => cleanups.push(mountBuilder(node, node.dataset.builder)));
+  root.querySelectorAll('[data-viz]').forEach((node) => cleanups.push(mountViz(node, blocks[Number(node.dataset.viz)])));
   const onClick = (e) => {
     const w = e.target.closest('[data-word]');
     if (w) openWord(w.dataset.word);

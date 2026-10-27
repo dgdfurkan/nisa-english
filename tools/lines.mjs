@@ -2,8 +2,10 @@
 // Kullanım: node tools/lines.mjs
 
 import { writeFileSync } from 'node:fs';
-import { WORDS } from '../js/data/words.js';
+import { WORDS, slug } from '../js/data/words.js';
 import { voiceLines } from '../js/data/units.js';
+import { GLOSS } from '../js/data/glossary.js';
+import { AUDIO } from '../js/data/audio.js';
 
 const chunk = (list, n) => {
   const out = [];
@@ -14,6 +16,11 @@ const chunk = (list, n) => {
 const words = WORDS.map((w) => [`w-${w.id}`, w.en]);
 const sentences = WORDS.map((w) => [`s-${w.id}`, w.ex]);
 const extra = voiceLines();
+// Genel kelimeler (cümlelerde dokununca çıkan anlam kutusu); ünite kelimesi olanların sesi zaten var
+const dictEn = new Set(WORDS.map((w) => w.en.toLowerCase()));
+const gloss = [...GLOSS.keys()].filter((en) => !dictEn.has(en)).map((en) => [`g-${slug(en)}`, en === 'i' ? 'I' : en]);
+// Ders satırları ve genel kelimelerde yalnızca sesi olmayanlar yeni gruplara girer; hazır grupların önbelleği bozulmaz
+const missing = (list) => list.filter(([id]) => !AUDIO.has(id));
 
 const NOTE_WORD = 'These are single dictionary headwords. Read each one on its own, clearly, with a natural falling intonation, exactly as written. Never add any other words.';
 const NOTE_SENT = 'These are example sentences in a vocabulary app. Read each sentence as a separate, natural sentence with clear, friendly rhythm, exactly as written.';
@@ -22,7 +29,8 @@ const NOTE_TEXT = 'These are lines from English lessons and short reading texts.
 const groups = [
   ...chunk(words, 72).map((lines, i) => ({ id: `w${i + 1}`, note: NOTE_WORD, lines })),
   ...chunk(sentences, 48).map((lines, i) => ({ id: `s${i + 1}`, note: NOTE_SENT, lines })),
-  ...chunk(extra, 40).map((lines, i) => ({ id: `x${i + 1}`, note: NOTE_TEXT, lines })),
+  ...chunk(missing(extra), 42).map((lines, i) => ({ id: `n${i + 1}`, note: NOTE_TEXT, lines })),
+  ...chunk(missing(gloss), 76).map((lines, i) => ({ id: `g${i + 1}`, note: NOTE_WORD, lines })),
 ];
 
 const cfg = {

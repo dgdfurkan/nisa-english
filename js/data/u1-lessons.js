@@ -1,6 +1,6 @@
 // Ünite 1 konu anlatımları
 // Metin biçimi: **kalın**, ==vurgu==, *İngilizce* (dokununca sözlükte açılır)
-// Blok türleri: p, ex, rule, table, tip, warn, right, people, check, list, dialog, pairs
+// Blok türleri: p, h, ex, rule, table, tip, warn, right, people, check, list, dialog, pairs, compare, viz (görsel anlatım)
 
 export const U1_LESSONS = [
   {
@@ -8,7 +8,7 @@ export const U1_LESSONS = [
     title: 'Dış Görünüşü Anlatmak',
     en: 'What does she look like?',
     pic: '🪞',
-    minutes: 8,
+    minutes: 12,
     steps: [
       {
         title: 'Birini nasıl tarif ederiz?',
@@ -20,6 +20,17 @@ export const U1_LESSONS = [
           { t: 'ex', en: 'She is tall and slim. She has got long curly hair.', tr: 'Uzun boylu ve ince. Uzun kıvırcık saçı var.' },
           { t: 'tip', text: 'Soruda *look like* var ama cevapta yok! Cevapta doğrudan görünüşü anlatırız: ==She is tall.==' },
           { t: 'right', ok: 'What does she look like?', bad: 'What is she look like?', why: 'Soruda yardımcı fiil "does" kullanılır, "is" kullanılmaz.' },
+          { t: 'h', text: 'Üç fiil, üç görev' },
+          { t: 'p', text: 'Birini anlatırken her özelliğin kendi fiili vardır. Bu tabloyu aklına yaz, sınavdaki tarif sorularının yarısı bu kadar!' },
+          {
+            t: 'compare',
+            cols: [
+              { e: '📏', title: 'is', sub: 'boy, vücut, yaş', items: ['*tall, short, slim*', '*young, old, middle-aged*', '*bald* (kel)'] },
+              { e: '💇‍♀️', title: 'has got', sub: 'sahip olduğumuz özellikler', tone: 'gold', items: ['*long hair, blue eyes*', '*a beard, a moustache*', '*freckles, dimples*'] },
+              { e: '👓', title: 'wears', sub: 'üzerimizde taşıdıklarımız', tone: 'good', items: ['*glasses, earrings*', '*a hat, a uniform*', '*braces* (diş teli)'] },
+            ],
+          },
+          { t: 'viz', kind: 'anatomy' },
         ],
       },
       {
@@ -109,6 +120,16 @@ export const U1_LESSONS = [
         ],
       },
       {
+        title: 'Karakter Stüdyosu: kendin dene',
+        blocks: [
+          { t: 'p', text: 'Şimdi öğrendiklerini birleştirelim. Aşağıdaki stüdyoda bir karakter tasarla. Her seçimde İngilizce tarif **kendiliğinden** yazılır. Hangi özelliğin **is**, hangisinin **has got**, hangisinin **wears** ile söylendiğine dikkat et!' },
+          { t: 'viz', kind: 'studio' },
+          { t: 'tip', text: 'Sınavda bir resim verip *Describe the person.* derlerse sırayla git: önce **boy ve vücut** (is), sonra **saç ve gözler** (has got), en son **gözlük, küpe** (wears).' },
+          { t: 'ex', en: 'She is short and slim. She has got straight black hair and brown eyes. She wears glasses.', tr: 'Kısa boylu ve ince. Düz siyah saçları ve kahverengi gözleri var. Gözlük takıyor.' },
+          { t: 'ex', en: 'He is tall and well-built. He has got short curly hair and a beard.', tr: 'Uzun boylu ve iri yapılı. Kısa kıvırcık saçları ve sakalı var.' },
+        ],
+      },
+      {
         title: 'Hızlı kontrol',
         blocks: [
           { t: 'check', q: 'A: What does your father look like?\nB: ______', opts: ['He is tall and he has got a beard.', 'He is kind and funny.', 'He likes football.', 'He is fine, thanks.'], a: 0, why: '"look like" dış görünüşü sorar. Boy ve sakal dış görünüştür.' },
@@ -132,7 +153,7 @@ export const U1_LESSONS = [
     title: 'Kişiliği Anlatmak',
     en: 'What is she like?',
     pic: '💭',
-    minutes: 8,
+    minutes: 11,
     steps: [
       {
         title: 'Nasıl biri?',
@@ -144,6 +165,14 @@ export const U1_LESSONS = [
           { t: 'ex', en: 'What are your parents like? They are kind and patient.', tr: 'Annenle baban nasıl insanlar? Nazik ve sabırlılar.' },
           { t: 'tip', text: 'Buradaki *like* "sevmek" demek değildir, "gibi" anlamındadır. Kelimesi kelimesine: "O nasıl biri?"' },
           { t: 'rule', parts: ['He / She', 'is', 'friendly / generous / lazy'] },
+          { t: 'h', text: 'Sıfatı bir davranışla destekle' },
+          {
+            t: 'compare',
+            cols: [
+              { e: '🙂', title: 'Sadece sıfat', sub: 'doğru ama kısa', items: ['*She is helpful.*'] },
+              { e: '🌟', title: 'Sıfat + davranış', sub: 'yazılıda tam puan', tone: 'good', items: ['*She is helpful. She always helps me with my homework.*'] },
+            ],
+          },
         ],
       },
       {
@@ -167,6 +196,7 @@ export const U1_LESSONS = [
         title: 'Davranıştan kişiliği bulmak',
         blocks: [
           { t: 'p', text: 'Sınavlarda çoğu zaman birinin **ne yaptığı** anlatılır ve senden **nasıl biri** olduğunu bulman istenir. İpuçlarını yakala!' },
+          { t: 'viz', kind: 'moods' },
           {
             t: 'table',
             head: ['Ne yapıyor?', 'Nasıl biri?'],
@@ -203,6 +233,8 @@ export const U1_LESSONS = [
           { t: 'p', text: 'Özellikleri bağlarken ==and== (ve) ve ==but== (ama) kullanırız. *but* zıt bir fikir getirir.' },
           { t: 'ex', en: 'She is clever and hard-working.', tr: 'O zeki ve çalışkan.' },
           { t: 'ex', en: 'He is funny, but he is a bit lazy.', tr: 'O komik ama biraz tembel.' },
+          { t: 'viz', kind: 'degree' },
+          { t: 'ex', en: 'My brother is quite shy, but he is very kind.', tr: 'Kardeşim oldukça utangaç ama çok nazik.' },
         ],
       },
       {
@@ -235,12 +267,13 @@ export const U1_LESSONS = [
     title: 'look like, be like, look',
     en: 'Who do you look like?',
     pic: '👯',
-    minutes: 6,
+    minutes: 8,
     steps: [
       {
         title: 'Karıştırılan dört kalıp',
         blocks: [
           { t: 'p', text: 'Bu dört kalıp birbirine çok benzer ama anlamları farklıdır. Sınavda mutlaka karşına çıkar!' },
+          { t: 'viz', kind: 'quad' },
           {
             t: 'table',
             head: ['Kalıp', 'Anlamı', 'Örnek cevap'],
@@ -264,6 +297,7 @@ export const U1_LESSONS = [
           { t: 'ex', en: "Do you look like your father? No, I don't.", tr: 'Babana benziyor musun? Hayır, benzemiyorum.' },
           { t: 'ex', en: "She doesn't look like her sister.", tr: 'O, kız kardeşine benzemiyor.' },
           { t: 'tip', text: '*resemble* da "benzemek" demektir ama yanına *like* almaz: ==She resembles her father.==' },
+          { t: 'viz', kind: 'family' },
         ],
       },
       {
@@ -308,7 +342,7 @@ export const U1_LESSONS = [
     title: 'Karşılaştırma Yapmak',
     en: 'Comparatives: taller than',
     pic: '⚖️',
-    minutes: 12,
+    minutes: 15,
     steps: [
       {
         title: 'İki kişiyi karşılaştırmak',
@@ -325,6 +359,7 @@ export const U1_LESSONS = [
             ],
           },
           { t: 'tip', text: '*than* "-den daha" demektir. *then* (sonra) ile karıştırma!' },
+          { t: 'viz', kind: 'lineup' },
         ],
       },
       {
@@ -334,6 +369,7 @@ export const U1_LESSONS = [
           { t: 'table', head: ['Sıfat', 'Karşılaştırma'], rows: [['tall', 'taller'], ['short', 'shorter'], ['old', 'older'], ['young', 'younger'], ['long', 'longer'], ['strong', 'stronger'], ['kind', 'kinder'], ['fast', 'faster']] },
           { t: 'p', text: 'Sonu zaten ==-e== ile biten sıfatlara sadece ==-r== ekleriz.' },
           { t: 'table', head: ['Sıfat', 'Karşılaştırma'], rows: [['nice', 'nicer'], ['brave', 'braver'], ['cute', 'cuter'], ['safe', 'safer'], ['rude', 'ruder']] },
+          { t: 'viz', kind: 'morph', items: [['tall', 'taller', 'er'], ['short', 'shorter', 'er'], ['old', 'older', 'er'], ['young', 'younger', 'er'], ['nice', 'nicer', 'r'], ['cute', 'cuter', 'r']] },
         ],
       },
       {
@@ -343,6 +379,7 @@ export const U1_LESSONS = [
           { t: 'table', head: ['Sıfat', 'Karşılaştırma'], rows: [['big', 'bigger'], ['thin', 'thinner'], ['fat', 'fatter'], ['slim', 'slimmer'], ['hot', 'hotter'], ['sad', 'sadder']] },
           { t: 'warn', text: 'İki sesli harf yan yanaysa çiftlenmez: ==cheap → cheaper==, ==weak → weaker==. Sonu iki sessizle bitiyorsa da çiftlenmez: ==short → shorter==.' },
           { t: 'right', ok: 'My cat is fatter than your cat.', bad: 'My cat is fater than your cat.', why: '"fat" sessiz-sesli-sessiz ile biter, "t" çiftlenir.' },
+          { t: 'viz', kind: 'morph', items: [['big', 'bigger', 'dbl'], ['thin', 'thinner', 'dbl'], ['slim', 'slimmer', 'dbl'], ['fat', 'fatter', 'dbl'], ['hot', 'hotter', 'dbl']] },
         ],
       },
       {
@@ -351,6 +388,7 @@ export const U1_LESSONS = [
           { t: 'p', text: 'Sonu ==-y== ile biten sıfatlarda *y* düşer, yerine ==-ier== gelir.' },
           { t: 'table', head: ['Sıfat', 'Karşılaştırma'], rows: [['funny', 'funnier'], ['lazy', 'lazier'], ['happy', 'happier'], ['busy', 'busier'], ['pretty', 'prettier'], ['tidy', 'tidier'], ['messy', 'messier'], ['easy', 'easier'], ['healthy', 'healthier'], ['curly', 'curlier']] },
           { t: 'right', ok: 'My brother is funnier than me.', bad: 'My brother is more funny than me.', why: '-y ile biten iki heceli sıfatlar -ier alır.' },
+          { t: 'viz', kind: 'morph', items: [['funny', 'funnier', 'y'], ['lazy', 'lazier', 'y'], ['happy', 'happier', 'y'], ['pretty', 'prettier', 'y'], ['easy', 'easier', 'y']] },
         ],
       },
       {
@@ -360,6 +398,7 @@ export const U1_LESSONS = [
           { t: 'table', head: ['Sıfat', 'Karşılaştırma'], rows: [['beautiful', 'more beautiful'], ['intelligent', 'more intelligent'], ['generous', 'more generous'], ['hard-working', 'more hard-working'], ['helpful', 'more helpful'], ['patient', 'more patient'], ['popular', 'more popular'], ['dangerous', 'more dangerous']] },
           { t: 'tip', text: 'Sonu ==-ful, -less, -ous, -ing, -ive== ile biten sıfatlar hep *more* alır: more careful, more careless, more generous, more boring, more creative.' },
           { t: 'ex', en: 'My grandmother is more patient than my grandfather.', tr: 'Büyükannem dedemden daha sabırlı.' },
+          { t: 'viz', kind: 'morph', items: [['beautiful', 'more beautiful', 'more'], ['intelligent', 'more intelligent', 'more'], ['generous', 'more generous', 'more'], ['careful', 'more careful', 'more']] },
         ],
       },
       {
@@ -370,6 +409,15 @@ export const U1_LESSONS = [
           { t: 'ex', en: 'My English is better than my Maths.', tr: 'İngilizcem matematiğimden daha iyi.' },
           { t: 'ex', en: 'Today the weather is worse than yesterday.', tr: 'Bugün hava dünkünden daha kötü.' },
           { t: 'right', ok: 'She is better at tennis than me.', bad: 'She is gooder at tennis than me.', why: '"good" düzensizdir: good → better.' },
+          { t: 'viz', kind: 'morph', items: [['good', 'better', 'irr'], ['bad', 'worse', 'irr'], ['far', 'farther', 'irr']] },
+        ],
+      },
+      {
+        title: 'Laboratuvar: kendin karşılaştır',
+        blocks: [
+          { t: 'p', text: 'Beş kuralı da gördün. Şimdi laboratuvarda dene: bir sıfat seç, Ali ve Elif\'in çubuklarını kaydır. Cümle ve kullanılan **kural** anında değişir. Çubuklar eşit olunca ne olduğuna da bak!' },
+          { t: 'viz', kind: 'complab' },
+          { t: 'tip', text: 'Hangi kuralı uygulayacağını bulmak için sıfatı yüksek sesle söyle: tek hece mi (tall), sessiz-sesli-sessiz ile mi bitiyor (big), -y ile mi bitiyor (funny), yoksa uzun mu (beautiful)?' },
         ],
       },
       {
@@ -416,7 +464,7 @@ export const U1_LESSONS = [
     title: 'Bir Arkadaşını Anlat',
     en: 'Writing a description',
     pic: '✍️',
-    minutes: 7,
+    minutes: 9,
     steps: [
       {
         title: 'İyi bir paragrafın planı',
@@ -432,6 +480,7 @@ export const U1_LESSONS = [
               '**5. Bitiş:** neden seviyorsun? *I love her because she is a great friend.*',
             ],
           },
+          { t: 'viz', kind: 'paraplan' },
         ],
       },
       {
